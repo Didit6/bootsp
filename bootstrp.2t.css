@@ -126,7 +126,7 @@ span.md-tune, span.md-enut{width:250px;background:#000;border:1px solid #ccc;dis
 .drpdn{position: relative;display: flex;height: 35px;border-radius: .25em;overflow: hidden;background-image:linear-gradient(to right,#000,#ccc,#000);box-shadow: 0 0 25px 5px #000;}
 .drpdn::after{content: '\25BC';position: absolute;top: 0;right: 0;height:35px;width:45px;background-image:linear-gradient(to right,#000,grey,#000);box-shadow: 0 0 25px 5px #000;transition: .25s all ease;pointer-events: none;margin:0 auto;text-align:center;align-items:center;justify-content: center;display:flex;color:red;}
 .drpdn:hover::after{color: #f39c12;}
-.nongol-2, .nongol {appearance: none;outline: 0;border: 0;box-shadow: none;background-image:linear-gradient(to right,#000,grey,#000);flex: 1;padding: 0 1em;color: #fff;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;font-weight:bold;font-size:17px;cursor: pointer;}
+.nongol-2, .nongol {appearance: none;outline: 0;border: 0;box-shadow: none;background-image:linear-gradient(to right,#000,grey,#000);flex: 1;padding: 0 1em;color: #fff;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;font-weight:bold;font-size:15px;cursor: pointer;}
 .nongol-2::-ms-expand, .nongol::-ms-expand {display: none;}
 .mn-rts, .nm-str{width:250px;background:#181818;border:1px solid #ccc;display:flex;top:40px;height:40px;color:#fff;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;box-shadow: 0 0 25px 5px #000;font-size:28px;text-align:center;align-items:center;justify-content: center;font-weight:bold;}
 .mn-rts b, .nm-str b{color:orange;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;}
