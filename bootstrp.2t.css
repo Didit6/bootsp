@@ -1,0 +1,133 @@
+.awak {background: #000;
+	font-family: Arial, Helvetica, San-serif;
+	margin:0;
+	outline: none;padding:15px;
+}
+#title_s h1{margin: 0.5vh 0;font-size: 2em;padding: 3vh 0;background-color: #333333;
+-webkit-background-clip: text;
+-moz-background-clip: text;background-clip: text;color: transparent;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;}
+h1#title_s .imgTitle, h1#title_sb .imgTitleb{text-shadow: 0 0 25px rgba(20, 139, 255, 0.8), 0 0 15px rgba(30, 144, 255, 0.54);background-color: rgba(77, 134, 189, 0.8);}
+a.josetxu {position: absolute;right: 0px;top: 10px;text-decoration: none;font-size: 10px;color: #333;width: 33%;opacity: 0.5;margin: 0 33%;}
+a.josetxu:hover {opacity:1;}
+#gtMod {margin-left:auto;margin-right:auto;float:none;height: 290px;background: url(https://blogger.googleusercontent.com/img/a/AVvXsEhGu0BgTAld9m1as5VSanYVJRprxEXvkVFHAS36uQ2XPlThG5SYRQoi0KKUYoAjk6DXr1hF3Ck0UhivnrpmP3oo8_C3X-ZydF39RiYGt7myGwNyGzbCZ5ebmPmrZLncBZ_6RfA3tFN_vtljQi9JUI_IMq1kwxUT9R61Ifa9v3UTc6L6TcyzscdhoW1F) no-repeat center 50% transparent;width: 360px;box-sizing: border-box;}
+#guitarBody {margin-left:auto;margin-right:auto;float:none;height: 290px;background: url(https://blogger.googleusercontent.com/img/a/AVvXsEi6yM7lgcDH_AvX0Zj22-0xmu3BvbTZM77khD12SSh_MZA41zKmoABuQuCOTBBpFpXmstl1kNtJrspKqwV-CPGww3UqKK5EZHCvvPZ2uHWS_ieSrG4gm1mRhFAJqNRa-e-qRu-1oAkLoHBGo6QbS_YMHCdefJ0MGqE5kFNGwAmWyZZUNTWfAXvZlyXQfA) no-repeat center 50% transparent;width: 360px;box-sizing: border-box;}
+button.snr {border: none;float: left;width: 50px;margin: 0 7px 0 7px;height: inherit;outline: none;cursor: pointer;padding: 0 !important;z-index: 1;}
+button.snr:first-child {margin-left: 60px !important;}
+button.string{border: none;float: left;width: 40px;margin: 0 7px 0 7px;height: inherit;outline: none;cursor: pointer;padding: 0 !important;z-index: 1;}
+button.string:first-child {margin-left: 26px !important;}
+button#t4, button#t3, button#t2, button#t1, button#s6, button#s5, button#s4, button#s3, button#s1 {margin-left: 6px;}
+button#s2 {margin-left: 8px;}
+#gtMod button, #guitarBody button {background-repeat:repeat-y ;background-position:center center;background-color:transparent;}
+#gtMod button.snr, button.playingSd, #guitarBody button.string, button.playingSound {background-repeat:repeat-y, repeat-y, no-repeat !important;background-position:center center, center center, center 50% !important;background-color:transparent;}
+/******* buttons ******/
+/******* buttons ******/
+#btnStopD, #btnStop {
+    background: url(https://blogger.googleusercontent.com/img/a/AVvXsEirUVORYFohdbA3OWNn261GRihbktGu7wBiVOHsTnNycRLl26CXS1o2eGPn3qJqedpoRIII12teqztfDD4_NBHCYiY8jZE6UqpIrL_QxSeiNqDfSbEPp2Yqog7nBpj45nSdCQ1te-SYfLxOxQ9z9Nhx75f15hz0YPXQiKz1PNkBDB64_6KzOYl6i_mQaA) no-repeat center right /contain;
+	text-align: left;
+}
+#btnHoldD, #btnHold {
+    background: url(https://blogger.googleusercontent.com/img/a/AVvXsEirUVORYFohdbA3OWNn261GRihbktGu7wBiVOHsTnNycRLl26CXS1o2eGPn3qJqedpoRIII12teqztfDD4_NBHCYiY8jZE6UqpIrL_QxSeiNqDfSbEPp2Yqog7nBpj45nSdCQ1te-SYfLxOxQ9z9Nhx75f15hz0YPXQiKz1PNkBDB64_6KzOYl6i_mQaA) no-repeat center left /contain;
+	text-align: right;
+}
+#btnHoldD:after, #btnStopD:before, #btnHold:after , #btnStop:before {
+    content: "HOLD";
+    font-size: 18px;
+    background-color: #333333;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;
+}
+#btnStopD:before, #btnStop:before {
+    content: "STOP";
+}
+#btnHoldD.active:after, #btnHoldD:active:after, #btnHold.active:after, #btnHold:active:after {
+	text-shadow: 0px 1px 3px rgba(255,255,255,0.3), 0 0 15px #59a0f4, 0 0 20px #59a0f4, 0 0 25px #59a0f4, 0 0 30px #59a0f4, 0 0 35px #59a0f4;
+	color: #1e90ff;
+}
+#btnStop:active:before, #btnStopD:active:before {
+	text-shadow: rgba(255,255,255,0.5) 0px 1px 3px, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000;
+	color: #ff0000;
+}
+#btnStop:active, #btnStopD:active {
+    background: url(https://blogger.googleusercontent.com/img/a/AVvXsEgeEJ-n3jSPEjV1lgIwa-z7ad6onml7Pa5UvFvkgrw2FE4R_vm1w8Gh1913cRWqG5AU86tSVZK2nJf1z6kgi3vooLlBUNiuR_WNyow72mAOq6hR6kd-pl4Pqauoed6Zysh1J2RfWuHmcG7TWQa_ix-phhzBEMLez6a53wCgi-uPh_QUPDvseW0bHuuXlg) no-repeat center right /contain;
+}
+#btnHold.active, #btnHold:active, #btnHoldD.active, #btnHoldD:active {
+    background: url(https://blogger.googleusercontent.com/img/a/AVvXsEhBnRRZoxCn1K9IcqGd0xV-b74YFLK9Yvsp4PQCXBFdbf2h3hFdILev_ez0DFrY4M7A4C4Ls5Go_ckiG7C5miXptFIVk37VJyRk1PXjT5UXucpt4c1bkkdiA3AL50Pg_eBt79gBr2cHDSczuBtl45UMTiIFN0K1yNfq38ZY4LgHzWmnYcntnqV8NWco1g) no-repeat center left /contain;
+}
+/****** pick *****/
+#btnPick {
+    background: url(/storage/emulated/0/DCIM/Screenshots/Chordx/png/pick-off.png) no-repeat center center /contain;
+	width: 100px;
+	font-size: 22px;
+}
+#btnPick.active{    
+    background: url(/storage/emulated/0/DCIM/Screenshots/Chordx/png/pick-on.png) no-repeat center center /contain;
+}
+section.pickActive , section.pickActive .string{
+	cursor: url(/storage/emulated/0/DCIM/Screenshots/Chordx/png/pua.png)10 60, auto;
+}
+#s1 {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhY2QAqqxKA9juMerUYYo-DnDtDra6Ew6SJUScknakHMi3vAAhzt_i_7GWO_tDdyRO45WiXs1-OOARdaY_Shqmzm7NRkbTterpbJu7wpGqtuQsR4DMKd80Pn4r4btwazT2jKQUTKJ4U65T4urJ8vl3hMVTfDKZreLK8Vs_HsXKw5IXZRQUCIcPddsiHeg); /*1.png*/}
+#s2 {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEixdp8FdJiWOOm4oNW6VgPXw_IPw9KiJhDWSpEy6yWfygbAhy0S4DRDKGaWPv333k08SJ0vzB7Ezw87OeR3fsMp64J09iT2DdjLrDndUu1m1jwcknTV1j_Jef70Wmtvr_n0rVnE7watnrZQ0XZEZRRzsUzrRyN6YslI6IR9DhZTu05ukManSibC9RvvmQ);}
+#t1, #s3 {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEiusxh4z2g0otZWFXVuQWUCyNnMxT5zbkEgCWMPD96PsBVlLRRHKs_blzUM-aWXcOugeCTzU9lL7SkUcE28KQi2b4JqPXhLHvC3TCQOwozUG7zPP-tnAt5pxGus8bSnG_pddl3GyTRFk-4Ho97CeoZpol74IbcbNTl4vUtOzE10Fsu9pp0A6uKXBvUy8A);}
+#t2, #s4 {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjRcJZrneiaBnBUQ_QW9pyjQD2Mw4PLCppQ7iYC9QH6aSGJkpGXDA58AYfKG-eYKq6MJFHMkfptdDq50L1PbdPmUoHl7boPxMUpixRHQ3RG7jA6wBjiOMXX0BcWfL13caaRo7tIjJU8s-p8yzrRP3CPxuCi5U9To94keV1T_NoXSIQvUq3FhVJ1UxsKKQ);}
+#t3, #s5 {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjkMGPm9Wy7Kc_udvo9B18iSL5S8TuHhPnbj0P69PEoj8AsatErLzMqyF8n27dl8zCb8mVkjbG9P50Rx3yKcBMnJRHxNRUfgCO8azqHdaMQYGV7NppmgYdHMAu2mzQOT2MxAkfwQNujEpTIlYU9Hl5o9YgmWJkiyqv5usd2O3psmHOHSaQZfP6_g4fizw);}
+#t4, #s6 {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEg8ffrb0mLQ2G7ZIyu_2C6UMQ8JwcjCq-aVtQeImope-_6JUyDoRkcVztrsiDRhX1SM3-N3735WKpJJNIC8WANUAWk3VSLKNTvPU5lH-6tyy-3-fttmpaVWC8RiKEQPM8YPDgp0FFnaPk6bLMQZU2Np50rbQbecqIh0iUa30vT_pjLWlWkHI_WhcgUfAQ);}
+#s1:hover {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEi0FEgviFmBdnxzgUqCqtI5exmui_UHzeZSAOL_tuz8hKMWovTHqSB-ArMSssL6ylcaLx_E334FZo8LRn1CJuJ5HCOimpu0dSbldRVXx4dd9sktinZBNBp7AzFSUz7mk2Fwdz_GF8x6oG_qAoOz2koYRq6Yi2khIoFLXbr_sLPBDWH2mN8h91MmTmDKpg), url(https://blogger.googleusercontent.com/img/a/AVvXsEhY2QAqqxKA9juMerUYYo-DnDtDra6Ew6SJUScknakHMi3vAAhzt_i_7GWO_tDdyRO45WiXs1-OOARdaY_Shqmzm7NRkbTterpbJu7wpGqtuQsR4DMKd80Pn4r4btwazT2jKQUTKJ4U65T4urJ8vl3hMVTfDKZreLK8Vs_HsXKw5IXZRQUCIcPddsiHeg); /*brillo1|1.png*/}
+#s2:hover {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEi0FEgviFmBdnxzgUqCqtI5exmui_UHzeZSAOL_tuz8hKMWovTHqSB-ArMSssL6ylcaLx_E334FZo8LRn1CJuJ5HCOimpu0dSbldRVXx4dd9sktinZBNBp7AzFSUz7mk2Fwdz_GF8x6oG_qAoOz2koYRq6Yi2khIoFLXbr_sLPBDWH2mN8h91MmTmDKpg), url(https://blogger.googleusercontent.com/img/a/AVvXsEixdp8FdJiWOOm4oNW6VgPXw_IPw9KiJhDWSpEy6yWfygbAhy0S4DRDKGaWPv333k08SJ0vzB7Ezw87OeR3fsMp64J09iT2DdjLrDndUu1m1jwcknTV1j_Jef70Wmtvr_n0rVnE7watnrZQ0XZEZRRzsUzrRyN6YslI6IR9DhZTu05ukManSibC9RvvmQ);}
+#t1:hover, #s3:hover {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjGmzsWsSkOWJ3O1PO7xBrm5S-IxjifKg8asuSkhdLXYsxMxFV9ehsyphZ1n0X1iMs8Wp24sOxI-SIe_5JgukTgvfDQR3wlCBOFA6mUmmRYZ6DVjW_ssEQ3RGy2BWUb3n5cbSfOlgM_As8g8pgSdhnrAwz2wwU_85IDaqbXzDDEbbsiIlojv0m136zcMw), url(https://blogger.googleusercontent.com/img/a/AVvXsEiusxh4z2g0otZWFXVuQWUCyNnMxT5zbkEgCWMPD96PsBVlLRRHKs_blzUM-aWXcOugeCTzU9lL7SkUcE28KQi2b4JqPXhLHvC3TCQOwozUG7zPP-tnAt5pxGus8bSnG_pddl3GyTRFk-4Ho97CeoZpol74IbcbNTl4vUtOzE10Fsu9pp0A6uKXBvUy8A);}
+#t2:hover, #s4:hover {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjGmzsWsSkOWJ3O1PO7xBrm5S-IxjifKg8asuSkhdLXYsxMxFV9ehsyphZ1n0X1iMs8Wp24sOxI-SIe_5JgukTgvfDQR3wlCBOFA6mUmmRYZ6DVjW_ssEQ3RGy2BWUb3n5cbSfOlgM_As8g8pgSdhnrAwz2wwU_85IDaqbXzDDEbbsiIlojv0m136zcMw), url(https://blogger.googleusercontent.com/img/a/AVvXsEjRcJZrneiaBnBUQ_QW9pyjQD2Mw4PLCppQ7iYC9QH6aSGJkpGXDA58AYfKG-eYKq6MJFHMkfptdDq50L1PbdPmUoHl7boPxMUpixRHQ3RG7jA6wBjiOMXX0BcWfL13caaRo7tIjJU8s-p8yzrRP3CPxuCi5U9To94keV1T_NoXSIQvUq3FhVJ1UxsKKQ);}
+#t3:hover, #s5:hover {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjyUcpuYYiQsccXL-m7yRN6EN6e-CuRkqYYJJSp8A51woFfocK2Z2BU-AVrP20DWXBaj5yRR4EybcIin4tmF5AAmOetEP_-PDavN7O6SmQER8sWDOlOqZiq1jCxcuRIAo55h9jEc-QQ1iOt2Y5i8RHPdMRZ_Phh7edgIylkXYHdXxgHFi62lsgzIoNvng), url(https://blogger.googleusercontent.com/img/a/AVvXsEjkMGPm9Wy7Kc_udvo9B18iSL5S8TuHhPnbj0P69PEoj8AsatErLzMqyF8n27dl8zCb8mVkjbG9P50Rx3yKcBMnJRHxNRUfgCO8azqHdaMQYGV7NppmgYdHMAu2mzQOT2MxAkfwQNujEpTIlYU9Hl5o9YgmWJkiyqv5usd2O3psmHOHSaQZfP6_g4fizw);}
+#t4:hover, #s6:hover {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjyUcpuYYiQsccXL-m7yRN6EN6e-CuRkqYYJJSp8A51woFfocK2Z2BU-AVrP20DWXBaj5yRR4EybcIin4tmF5AAmOetEP_-PDavN7O6SmQER8sWDOlOqZiq1jCxcuRIAo55h9jEc-QQ1iOt2Y5i8RHPdMRZ_Phh7edgIylkXYHdXxgHFi62lsgzIoNvng), url(https://blogger.googleusercontent.com/img/a/AVvXsEg8ffrb0mLQ2G7ZIyu_2C6UMQ8JwcjCq-aVtQeImope-_6JUyDoRkcVztrsiDRhX1SM3-N3735WKpJJNIC8WANUAWk3VSLKNTvPU5lH-6tyy-3-fttmpaVWC8RiKEQPM8YPDgp0FFnaPk6bLMQZU2Np50rbQbecqIh0iUa30vT_pjLWlWkHI_WhcgUfAQ);}
+#s1.string.playingSound {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEiAbCpYqz0s1Gr4JYVRyw-GwUHPBOAr4UO1a23MNwSZaIjt3_xOLjHIqnNQfHsahdbR5ZwHGRo5bQq_IcJ7uwGWqwTtt5Op6mWdr20GWHtMMZ-JZqi8yQAubzq3I-cNFKrxX0OIsgXvVOLbb-z86COsH2rAMJkD7ClURV1eH3rhuUYbAMxj53F5c2P-6Q), url(https://blogger.googleusercontent.com/img/a/AVvXsEi0FEgviFmBdnxzgUqCqtI5exmui_UHzeZSAOL_tuz8hKMWovTHqSB-ArMSssL6ylcaLx_E334FZo8LRn1CJuJ5HCOimpu0dSbldRVXx4dd9sktinZBNBp7AzFSUz7mk2Fwdz_GF8x6oG_qAoOz2koYRq6Yi2khIoFLXbr_sLPBDWH2mN8h91MmTmDKpg), url(https://blogger.googleusercontent.com/img/a/AVvXsEhOeSTaEklaH1OADXeScBaKfWprMDvBwJU5jKO89eENRaYso_sFu0mL3IJ6IjQ7sboqwMSg9h7rzLz6YLF1rNTlUUbwRdXnqWVVRzTFIfSp1Qboe56fhFFMLupxkVv3x-_4idLo1ugmFBgJJJSExmxyd6sKpDMts9lWkvIXj-FDCxKSnUD9F1N50Bc3-w); /*1.gif|luz.png*/}
+#s2.string.playingSound {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEj3zEX0Kmv4UzPz-lxKOm_G-hBnBi_yZ1juR6pK53W2bMj3QYqRE20yxIAhq9uC9aVdED6YU1hYbzgO8ct15eVCrJDl-Vhy65vze_YA6BdCnkiqQSd9wCyINeuj_HbrlZMdwA2ggEBgUiKR48ht-Q7pP2P0wav06h8uUPMx5nN1T772QKaIpzFAhoFfFg), url(https://blogger.googleusercontent.com/img/a/AVvXsEi0FEgviFmBdnxzgUqCqtI5exmui_UHzeZSAOL_tuz8hKMWovTHqSB-ArMSssL6ylcaLx_E334FZo8LRn1CJuJ5HCOimpu0dSbldRVXx4dd9sktinZBNBp7AzFSUz7mk2Fwdz_GF8x6oG_qAoOz2koYRq6Yi2khIoFLXbr_sLPBDWH2mN8h91MmTmDKpg), url(https://blogger.googleusercontent.com/img/a/AVvXsEhOeSTaEklaH1OADXeScBaKfWprMDvBwJU5jKO89eENRaYso_sFu0mL3IJ6IjQ7sboqwMSg9h7rzLz6YLF1rNTlUUbwRdXnqWVVRzTFIfSp1Qboe56fhFFMLupxkVv3x-_4idLo1ugmFBgJJJSExmxyd6sKpDMts9lWkvIXj-FDCxKSnUD9F1N50Bc3-w);}
+#t1.snr.playingSd, #s3.string.playingSound {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEj3zEX0Kmv4UzPz-lxKOm_G-hBnBi_yZ1juR6pK53W2bMj3QYqRE20yxIAhq9uC9aVdED6YU1hYbzgO8ct15eVCrJDl-Vhy65vze_YA6BdCnkiqQSd9wCyINeuj_HbrlZMdwA2ggEBgUiKR48ht-Q7pP2P0wav06h8uUPMx5nN1T772QKaIpzFAhoFfFg), url(https://blogger.googleusercontent.com/img/a/AVvXsEjGmzsWsSkOWJ3O1PO7xBrm5S-IxjifKg8asuSkhdLXYsxMxFV9ehsyphZ1n0X1iMs8Wp24sOxI-SIe_5JgukTgvfDQR3wlCBOFA6mUmmRYZ6DVjW_ssEQ3RGy2BWUb3n5cbSfOlgM_As8g8pgSdhnrAwz2wwU_85IDaqbXzDDEbbsiIlojv0m136zcMw), url(https://blogger.googleusercontent.com/img/a/AVvXsEhOeSTaEklaH1OADXeScBaKfWprMDvBwJU5jKO89eENRaYso_sFu0mL3IJ6IjQ7sboqwMSg9h7rzLz6YLF1rNTlUUbwRdXnqWVVRzTFIfSp1Qboe56fhFFMLupxkVv3x-_4idLo1ugmFBgJJJSExmxyd6sKpDMts9lWkvIXj-FDCxKSnUD9F1N50Bc3-w);}
+#t2.snr.playingSd, #s4.string.playingSound {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEg_Hsjdvi45kg2wb-Rc-3ecCky1A7dlYU9I73SE2jLH40U_a5ZVAlpxNkqmYRbyUuPUt-_fkAeNmAMC99ivuRJVpNrNg8Od1wIUWRZn1qpClh9796E48fmz_ibjnSInFuFGK1XQEr3Z1H_N_gJYQbBZgZa9Crs_onQHlQPmWg8eShuLtfZ8xFbyLWaUyw), url(https://blogger.googleusercontent.com/img/a/AVvXsEjGmzsWsSkOWJ3O1PO7xBrm5S-IxjifKg8asuSkhdLXYsxMxFV9ehsyphZ1n0X1iMs8Wp24sOxI-SIe_5JgukTgvfDQR3wlCBOFA6mUmmRYZ6DVjW_ssEQ3RGy2BWUb3n5cbSfOlgM_As8g8pgSdhnrAwz2wwU_85IDaqbXzDDEbbsiIlojv0m136zcMw), url(https://blogger.googleusercontent.com/img/a/AVvXsEhOeSTaEklaH1OADXeScBaKfWprMDvBwJU5jKO89eENRaYso_sFu0mL3IJ6IjQ7sboqwMSg9h7rzLz6YLF1rNTlUUbwRdXnqWVVRzTFIfSp1Qboe56fhFFMLupxkVv3x-_4idLo1ugmFBgJJJSExmxyd6sKpDMts9lWkvIXj-FDCxKSnUD9F1N50Bc3-w);}
+#t3.snr.playingSd, #s5.string.playingSound {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjeg7CN4zW3V7zVoEp97DW72_pBodFbbfIAvb-ijwc1jHRf1j_TTpl1t15HuW_XfxFPUBZTUN-RO6k0NymPOpsjGHv34JS549b0ITF9dRi7iWnk2NMYaEToyoh0L6TGp9K_KHkPVrEsGdpDKwOXQxPhdQ0BTTZ97jJPrPkhEkz67SpzQbmD3-n6ssPbPg), url(https://blogger.googleusercontent.com/img/a/AVvXsEjyUcpuYYiQsccXL-m7yRN6EN6e-CuRkqYYJJSp8A51woFfocK2Z2BU-AVrP20DWXBaj5yRR4EybcIin4tmF5AAmOetEP_-PDavN7O6SmQER8sWDOlOqZiq1jCxcuRIAo55h9jEc-QQ1iOt2Y5i8RHPdMRZ_Phh7edgIylkXYHdXxgHFi62lsgzIoNvng), url(https://blogger.googleusercontent.com/img/a/AVvXsEhOeSTaEklaH1OADXeScBaKfWprMDvBwJU5jKO89eENRaYso_sFu0mL3IJ6IjQ7sboqwMSg9h7rzLz6YLF1rNTlUUbwRdXnqWVVRzTFIfSp1Qboe56fhFFMLupxkVv3x-_4idLo1ugmFBgJJJSExmxyd6sKpDMts9lWkvIXj-FDCxKSnUD9F1N50Bc3-w);}
+#t4.snr.playingSd, #s6.string.playingSound {background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjfZts_-G8LZk4CBgH6btR-M0ePu4yd3PbdqvzB461KBd8OtNsRkzyj_3wgJBeKwuBJfVDpoae5AwnP6ibhhSok5hA_NxkwQWrjz8yd0aMtYTFi_iFG1wHEKzaZbXeOdOzeXOEnoi-zwh_BneLDiCvEgijmyEaVj3ipBIJ4a2lNnGaRRtDaAaMcHE7FNw), url(https://blogger.googleusercontent.com/img/a/AVvXsEjyUcpuYYiQsccXL-m7yRN6EN6e-CuRkqYYJJSp8A51woFfocK2Z2BU-AVrP20DWXBaj5yRR4EybcIin4tmF5AAmOetEP_-PDavN7O6SmQER8sWDOlOqZiq1jCxcuRIAo55h9jEc-QQ1iOt2Y5i8RHPdMRZ_Phh7edgIylkXYHdXxgHFi62lsgzIoNvng), url(https://blogger.googleusercontent.com/img/a/AVvXsEhOeSTaEklaH1OADXeScBaKfWprMDvBwJU5jKO89eENRaYso_sFu0mL3IJ6IjQ7sboqwMSg9h7rzLz6YLF1rNTlUUbwRdXnqWVVRzTFIfSp1Qboe56fhFFMLupxkVv3x-_4idLo1ugmFBgJJJSExmxyd6sKpDMts9lWkvIXj-FDCxKSnUD9F1N50Bc3-w);}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 380px){
+#guitarBody {margin-left: 0;}
+}
+@media only screen and (max-width: 359px){
+#guitarBody {margin-left: 0px;background-position-x: -26px;}	
+}
+@media only screen and (max-width: 320px){
+#guitarBody {width: 320px;padding-left: 5px;box-sizing: border-box;margin-right: 0;background-position-x: -21px;}
+.notes {width: 320px;margin-left: 0px;}
+.notes  span {width: 48px;}
+button.string:first-child {margin-left: 0 !important;}
+button.string:last-child {margin-right: 0!important;}
+}
+/* Hide Pick if we have an inaccurate pointing device */
+@media (pointer:coarse) {
+#btnPick {display:none !important;}
+}
+/* Hide Pick if orientation is portrait (vertical)*/
+@media only screen and  (orientation : portrait) {
+ #btnPick {display:none !important;}
+}
+.nUk {margin-top:10px;position: absolute;width: 330px;z-index: -1;margin-left: 55px;}
+.nUk span {width: 60px;display: inline-block;color: #171717;text-align: center;font-size: 50px;z-index: 0;text-shadow: -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;}
+.nUk .lightSn, .nUk .lightSn span {color: #fff;
+text-shadow: 0px 0px 15px #ff7700, 0px 0px 25px #ff7700, 0px 0px 35px #fff, -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;transition: all 0.2s ease;}
+.notes {margin-top:10px;position: absolute;width: 330px;z-index: -1;margin-left: 20px;}
+.notes span {width: 50px;display: inline-block;color: #171717;text-align: center;font-size: 50px;z-index: 0;text-shadow: -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;}
+.notes .lightOn, .notes .lightOn span {color: #fff;
+text-shadow: 0px 0px 15px #ff7700, 0px 0px 25px #ff7700, 0px 0px 35px #fff, -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;transition: all 0.2s ease;}
+.notas {font-size: 22px !important;margin-top: 42vh;}
+/* menu atas guitar */
+.ft{margin: 0;background-color: hsl(0,0%,90%);height: 15vh;text-align:center;bottom: 0;width: 100%;background-image:linear-gradient(to right,#000,grey,#000);box-shadow: 0 0 25px 5px #000;}
+.ft button {font-size: 0;height: 9vh;width: 140px;margin: 3vh 1vh 0;border: none;outline: none;font-weight: bold;color: transparent;cursor: pointer;text-align: center;}
+.headstck{width:100%;display:flex;padding:0px;top:50px;height:100px;color:#000;background-color: hsl(0,0%,90%);background-image:linear-gradient(to right,#000,grey,#000);box-shadow: 0 0 25px 5px #000;text-align:center;align-items:center;justify-content: center;flex-direction: column;}
+span.md-tune, span.md-enut{width:250px;background:#000;border:1px solid #ccc;display:flex;top:10px;height:30px;color:#fff;font-weight:bold;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;text-align:center;align-items:center;justify-content: center;font-size:20px;border-radius:10px 10px 0px 0px;}
+.headstockghj, .headstock{display:flex;top:0;height:50px;}
+.drpdn{position: relative;display: flex;width: 200px;height: 35px;border-radius: .25em;overflow: hidden;background-image:linear-gradient(to right,#000,#ccc,#000);box-shadow: 0 0 25px 5px #000;}
+.drpdn::after{content: '\25BC';position: absolute;top: 0;right: 0;height:35px;width:45px;background-image:linear-gradient(to right,#000,grey,#000);box-shadow: 0 0 25px 5px #000;transition: .25s all ease;pointer-events: none;margin:0 auto;text-align:center;align-items:center;justify-content: center;display:flex;color:red;}
+.drpdn:hover::after{color: #f39c12;}
+.nongol-2, .nongol {appearance: none;outline: 0;border: 0;box-shadow: none;background-image:linear-gradient(to right,#000,grey,#000);flex: 1;padding: 0 1em;color: #fff;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;font-weight:bold;font-size:17px;cursor: pointer;}
+.nongol-2::-ms-expand, .nongol::-ms-expand {display: none;}
+.mn-rts, .nm-str{width:250px;background:#181818;border:1px solid #ccc;display:flex;top:40px;height:40px;color:#fff;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;box-shadow: 0 0 25px 5px #000;font-size:28px;text-align:center;align-items:center;justify-content: center;font-weight:bold;}
+.mn-rts b, .nm-str b{color:orange;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;}
+.mn-rts strong, .nm-str strong{text-shadow: 0px 0px 15px #87ff00, 0px 0px 25px #87ff00, 0px 0px 35px green, -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;transition: all 0.2s ease;}
