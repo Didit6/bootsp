@@ -1,0 +1,58 @@
+body {background:#000;margin:0;outline: none;}
+.awak{margin:0;outline:0;}
+#guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:70px;align-items:center;justify-content:center;height:200px;background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/bcgc.png) no-repeat center 50% transparent;width:360px;box-sizing:border-box;}
+button.string{border:none;float:left;width:46px;margin:0 7px 0 7px;height:inherit;outline:0;cursor:pointer;padding:0!important;z-index:1}
+button.string:first-child{margin-left:65px!important}button#s1,button#s3,button#s4{margin-left:6px}button#s2{margin-left:8px}
+#guitarBody button{background-repeat:repeat-y;background-position:center center;background-color:transparent}
+#guitarBody button.string,button.playingSound{background-repeat:repeat-y,repeat-y,no-repeat!important;background-position:center center,center center,center 50%!important;background-color:transparent}
+#btnStop{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/ekxnh.png) no-repeat center right/contain;text-align:left;font-family: 'Dongle', sans-serif;font-size: 25px;}
+#btnHold{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/ekxnh.png) no-repeat center left/contain;text-align:right;font-family: 'Dongle', sans-serif;font-size:25px;}#btnHold:after,#btnStop:before{content:"Hold";font-size:15px;font-family: 'Dongle', sans-serif;background-color:#333;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;color:#ccc;text-shadow:rgba(255,255,255,.5) 0 1px 3px;padding:0;}
+#btnStop:before{content:"Stop"}#btnHold.active:after,#btnHold:active:after{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px orange,0 0 20px red,0 0 25px orange;color:orange;font-family: 'Dongle', sans-serif;}
+#btnHold.active,#btnHold:active{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/chrsr.png) no-repeat center left/contain;font-family: 'Dongle', sans-serif;}
+#btnStop:active:before{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px red,0 0 20px red,0 0 25px red;color:red;font-family: 'Dongle', sans-serif;}
+#btnStop:active{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/gcggv.png) no-repeat center right/contain;font-family: 'Dongle', sans-serif;}
+#btnPick{background:url(/storage/emulated/0/DCIM/Screenshots/Chordx/png/pick-off.png) no-repeat center center/contain;width:100px;font-size:22px;font-family: 'Dongle', sans-serif;}
+#s1 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs2.png); /*1.png*/}
+#s2 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs3.png);}
+#s3 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs4.png);}
+#s4 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs5.png);}
+#s1:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs2.png); /*brillo1|1.png*/}
+#s2:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs3.png);}
+#s3:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br3.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs4.png);}
+#s4:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br3.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/bs5.png);}
+#s1.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/6.gif); /*1.gif|luz.png*/}
+#s2.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/6.gif);}
+#s3.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br3.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/6.gif);}
+#s4.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br3.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/6.gif);}
+.headstck_2{border-top:2px solid grey;z-index:2;width:100%;height:60px;position:absolute;bottom:260px;background-image:linear-gradient(to right,#2d1e04,#5c3e0b,#2d1e04);padding:0px;}
+.ft{position:absolute;bottom:0;background-image:linear-gradient(to right,#2d1e04,#5c3e0b,#2d1e04);height:70px;width:100%;text-align:center;}
+.ft button{margin:0px 5px 0px 5px;font-family: 'Dongle', sans-serif;font-size:0;width:90px;height:48px;border:none;outline:0;font-weight:700;color:transparent;cursor:pointer;text-align:center;font-size: 15px;}
+.ruutf{margin-left:auto;margin-right:auto;display: flex;flex-wrap: wrap;padding:0px;text-align:center;align-items:center;justify-content:center;width:300px;height:70px;}
+.drpdn::after{font-family: 'Dongle', sans-serif;border-radius:10%;border: 1px solid transparent;content:'\25BC';position:absolute;top:0;right:0;height:38px;width:38px;background-image: 
+    linear-gradient(to right,#000,grey,#000),
+    -webkit-linear-gradient(bottom left, #ED9715 20px, #EB5E27, #EB5E27, #EB5E27 90%); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;box-shadow:0 0 25px 5px #000;transition:.25s all ease;pointer-events:none;margin:0 auto;text-align:center;align-items:center;justify-content:center;display:flex;color:red;}
+.drpdn:hover::after{color:#f39c12;font-family: 'Dongle', sans-serif;}
+.nongol{appearance:none;outline:0;border:1px solid transparent;box-shadow:none;background-image: 
+    linear-gradient(to right,#121824,#121824,#121824),
+    -webkit-linear-gradient(bottom left, #EFC828 10px, #F0AD30 20px, #ED9715, #ED874F, #EB5E27 90%); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  flex:1;padding-left: 9px;color:#fff;text-shadow:rgba(255,255,255,.5) 0 1px 3px;font-weight:700;font-size:17px;cursor:pointer;border-radius:2px;font-family: 'Dongle', sans-serif;}.nongol::-ms-expand{display:none;}
+.drpdn{margin:0px 20px 0px 0px;border-radius:0;position:relative;display:flex;width:45%;height:40px;overflow:hidden;background-image: 
+    linear-gradient(to right,#000,grey,#000),
+    -webkit-linear-gradient(bottom left, #EFC828 10px, #F0AD30 20px, #ED9715, #ED874F, #EB5E27 90%); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;box-shadow:0 0 25px 5px #000;font-family: 'Dongle', sans-serif;}
+.tudgv{display: flex;flex-wrap: wrap;padding:0px 0px 0px 8px;text-align:center;align-items:center;height:60px;}
+.md-tuneb{box-shadow:0 0 25px 5px #000;width:40%;background-image:linear-gradient(to right,#121824,#121824,#121824);height:40px;color:#fff;font-weight:bold;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;text-align:center;align-items:center;justify-content: center;font-size:17px;display:flex;font-family: 'Dongle', sans-serif;border:1px solid #121824;border-radius:8px;}
+.nckl{position:absolute;bottom:295px;width:100%;height:260px;background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/rG.png) no-repeat center;background-size: contain;left: 0;right: 0;margin: 0 auto;}
+.sn3{background:#050709;width:50px;height:50px;border:1px solid #3e3e3e;margin:30px 10px 10px 55px;border-radius:1000px;left: 0;right: 0;top:0;bottom:0;}
+.sn4{background:#050709;width:50px;height:50px;border:1px solid #3e3e3e;margin:30px 10px 10px 50px;border-radius:1000px;}
+.sn2{background:#050709;width:50px;height:50px;border:1px solid #3e3e3e;margin:30px 10px 10px 20px;border-radius:1000px;}
+.sn1{background:#050709;width:50px;height:50px;border:1px solid #3e3e3e;margin:30px 10px 10px 30px;border-radius:1000px;}
+.lftngl{z-index:1;left:0;position:absolute;bottom:360px;width:130px;}
+.rgthngl{z-index:1;right:0;position:absolute;bottom:360px;width:130px;}
+.sn4 span,.sn3 span,.sn2 span,.sn1 span {color:#121824;text-shadow:-1px -1px 1px #000,0 0 1px #6f6f6f;font-size:18px;display:flex;height:50px;align-items:center;justify-content:center;}
+.sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{color:#fff;text-shadow: 0px 0px 15px #87ff00, 0px 0px 25px #87ff00, 0px 0px 35px green, -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;transition:all .2s ease;font-family: 'Dongle', sans-serif;border:2px solid #FFAC24;border-radius:100px;}
