@@ -1,6 +1,6 @@
 body {margin:0;outline: none;}
 .awak{margin:0;outline:0;}
-#guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:70px;align-items:center;justify-content:center;height:200px;background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/pastilla.png) no-repeat center 50% transparent;width:360px;box-sizing:border-box;}
+#guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:70px;align-items:center;justify-content:center;height:200px;background:url(https://krintune.web.app/tpuxr/pastilla.png) no-repeat center 50% transparent;width:360px;box-sizing:border-box;}
 button.string{border:none;float:left;width:40px;margin:0 7px 0 7px;height:inherit;outline:0;cursor:pointer;padding:0!important;z-index:1}
 button.string:first-child{margin-left:26px!important}button#s1,button#s3,button#s4,button#s5,button#s6{margin-left:6px}button#s2{margin-left:8px}
 #guitarBody button{background-repeat:repeat-y;background-position:center center;background-color:transparent}
