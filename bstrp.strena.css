@@ -1,35 +1,35 @@
-body {background:#000;margin:0;outline: none;}
+body {margin:0;outline: none;}
 .awak{margin:0;outline:0;}
 #guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:70px;align-items:center;justify-content:center;height:200px;background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/pastilla.png) no-repeat center 50% transparent;width:360px;box-sizing:border-box;}
 button.string{border:none;float:left;width:40px;margin:0 7px 0 7px;height:inherit;outline:0;cursor:pointer;padding:0!important;z-index:1}
 button.string:first-child{margin-left:26px!important}button#s1,button#s3,button#s4,button#s5,button#s6{margin-left:6px}button#s2{margin-left:8px}
 #guitarBody button{background-repeat:repeat-y;background-position:center center;background-color:transparent}
 #guitarBody button.string,button.playingSound{background-repeat:repeat-y,repeat-y,no-repeat!important;background-position:center center,center center,center 50%!important;background-color:transparent}
-#btnStop{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/ekxnh.png) no-repeat center right/contain;text-align:left;font-family: 'Dongle', sans-serif;font-size: 25px;}
-#btnHold{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/ekxnh.png) no-repeat center left/contain;text-align:right;font-family: 'Dongle', sans-serif;font-size:25px;}#btnHold:after,#btnStop:before{content:"Hold";font-size:15px;font-family: 'Dongle', sans-serif;background-color:#333;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;color:#ccc;text-shadow:rgba(255,255,255,.5) 0 1px 3px;padding:0;}
+#btnStop{background:url(https://krintune.web.app/tpuxr/ekxnh.png) no-repeat center right/contain;text-align:left;font-family: 'Dongle', sans-serif;font-size: 25px;}
+#btnHold{background:url(https://krintune.web.app/tpuxr/ekxnh.png) no-repeat center left/contain;text-align:right;font-family: 'Dongle', sans-serif;font-size:25px;}#btnHold:after,#btnStop:before{content:"Hold";font-size:15px;font-family: 'Dongle', sans-serif;background-color:#333;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;color:#ccc;text-shadow:rgba(255,255,255,.5) 0 1px 3px;padding:0;}
 #btnStop:before{content:"Stop"}#btnHold.active:after,#btnHold:active:after{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px orange,0 0 20px red,0 0 25px orange;color:orange;font-family: 'Dongle', sans-serif;}
-#btnHold.active,#btnHold:active{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/chrsr.png) no-repeat center left/contain;font-family: 'Dongle', sans-serif;}
+#btnHold.active,#btnHold:active{background:url(https://krintune.web.app/tpuxr/chrsr.png) no-repeat center left/contain;font-family: 'Dongle', sans-serif;}
 #btnStop:active:before{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px red,0 0 20px red,0 0 25px red;color:red;font-family: 'Dongle', sans-serif;}
-#btnStop:active{background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/gcggv.png) no-repeat center right/contain;font-family: 'Dongle', sans-serif;}
+#btnStop:active{background:url(https://krintune.web.app/tpuxr/gcggv.png) no-repeat center right/contain;font-family: 'Dongle', sans-serif;}
 #btnPick{background:url(/storage/emulated/0/DCIM/Screenshots/Chordx/png/pick-off.png) no-repeat center center/contain;width:100px;font-size:22px;font-family: 'Dongle', sans-serif;}
-#s1 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/1.png); /*1.png*/}
-#s2 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/2.png);}
-#s3 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/3.png);}
-#s4 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/4.png);}
-#s5 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/5.png);}
-#s6 {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/6.png);}
-#s1:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/1.png);}
-#s2:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/2.png);}
-#s3:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/3.png);}
-#s4:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/4.png);}
-#s5:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/5.png);}
-#s6:hover {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/6.png);}
-#s1.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/2.gif), url(https://krintune.web.app/krintune/rcwpl/tpuxr/luz.png); /*1.gif|luz.png*/}
-#s2.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/2.gif), url(https://krintune.web.app/krintune/rcwpl/tpuxr/luz.png);}
-#s3.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/3.gif), url(https://krintune.web.app/krintune/rcwpl/tpuxr/luz.png);}
-#s4.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/4.gif), url(https://krintune.web.app/krintune/rcwpl/tpuxr/luz.png);}
-#s5.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/5.gif), url(https://krintune.web.app/krintune/rcwpl/tpuxr/luz.png);}
-#s6.string.playingSound {background-image: url(https://krintune.web.app/krintune/rcwpl/tpuxr/br1.png), url(https://krintune.web.app/krintune/rcwpl/tpuxr/6.gif), url(https://krintune.web.app/krintune/rcwpl/tpuxr/luz.png);}
+#s1 {background-image: url(https://krintune.web.app/tpuxr/1.png); /*1.png*/}
+#s2 {background-image: url(https://krintune.web.app/tpuxr/2.png);}
+#s3 {background-image: url(https://krintune.web.app/tpuxr/3.png);}
+#s4 {background-image: url(https://krintune.web.app/tpuxr/4.png);}
+#s5 {background-image: url(https://krintune.web.app/tpuxr/5.png);}
+#s6 {background-image: url(https://krintune.web.app/tpuxr/6.png);}
+#s1:hover {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/1.png);}
+#s2:hover {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/2.png);}
+#s3:hover {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/3.png);}
+#s4:hover {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/4.png);}
+#s5:hover {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/5.png);}
+#s6:hover {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/6.png);}
+#s1.string.playingSound {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/2.gif), url(https://krintune.web.app/tpuxr/luz.png); /*1.gif|luz.png*/}
+#s2.string.playingSound {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/2.gif), url(https://krintune.web.app/tpuxr/luz.png);}
+#s3.string.playingSound {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/3.gif), url(https://krintune.web.app/tpuxr/luz.png);}
+#s4.string.playingSound {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/4.gif), url(https://krintune.web.app/tpuxr/luz.png);}
+#s5.string.playingSound {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/5.gif), url(https://krintune.web.app/tpuxr/luz.png);}
+#s6.string.playingSound {background-image: url(https://krintune.web.app/tpuxr/br1.png), url(https://krintune.web.app/tpuxr/6.gif), url(https://krintune.web.app/tpuxr/luz.png);}
 .headstck_2{border-top:2px solid grey;z-index:2;width:100%;height:60px;position:absolute;bottom:260px;background-image:linear-gradient(to right,#2d1e04,#5c3e0b,#2d1e04);padding:0px;}
 .ft{position:absolute;bottom:0;background-image:linear-gradient(to right,#2d1e04,#5c3e0b,#2d1e04);height:70px;width:100%;text-align:center;}
 .ft button{margin:0px 5px 0px 5px;font-family: 'Dongle', sans-serif;font-size:0;width:90px;height:48px;border:none;outline:0;font-weight:700;color:transparent;cursor:pointer;text-align:center;font-size: 15px;}
@@ -53,7 +53,7 @@ button.string:first-child{margin-left:26px!important}button#s1,button#s3,button#
   background-origin: padding-box, border-box;box-shadow:0 0 25px 5px #000;font-family: 'Dongle', sans-serif;}
 .tudgv{display: flex;flex-wrap: wrap;padding:0px 0px 0px 8px;text-align:center;align-items:center;height:60px;}
 .md-tuneb{box-shadow:0 0 25px 5px #000;width:40%;background-image:linear-gradient(to right,#121824,#121824,#121824);height:40px;color:#fff;font-weight:bold;text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;text-align:center;align-items:center;justify-content: center;font-size:17px;display:flex;font-family: 'Dongle', sans-serif;border:1px solid #121824;border-radius:8px;}
-.nckl{position:absolute;bottom:295px;width:100%;height:280px;background:url(https://krintune.web.app/krintune/rcwpl/tpuxr/0G.png) no-repeat center;background-size: contain;left: 0;right: 0;margin: 0 auto;}
+.nckl{position:absolute;bottom:295px;width:100%;height:280px;background:url(https://krintune.web.app/tpuxr/0G.png) no-repeat center;background-size: contain;left: 0;right: 0;margin: 0 auto;}
 .sn4{background:#050709;width:50px;height:50px;border:1px solid #3e3e3e;margin:10px 10px 10px 50px;border-radius:1000px;left: 0;right: 0;top:0;bottom:0;}
 .sn5{background:#050709;width:50px;height:50px;border:1px solid #3e3e3e;margin:10px 10px 10px 50px;border-radius:1000px;}
 .sn6{background:#050709;width:50px;height:50px;border:1px solid #3e3e3e;margin:10px 10px 10px 50px;border-radius:1000px;}
@@ -63,4 +63,5 @@ button.string:first-child{margin-left:26px!important}button#s1,button#s3,button#
 .lftngl{z-index:1;left:0;position:absolute;bottom:355px;width:100px;}
 .rgthngl{z-index:1;right:0;position:absolute;bottom:355px;width:100px;}
 .sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {color:#121824;text-shadow:-1px -1px 1px #000,0 0 1px #6f6f6f;font-size:18px;display:flex;height:50px;align-items:center;justify-content:center;}
-.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{color:#fff;text-shadow: 0px 0px 15px #87ff00, 0px 0px 25px #87ff00, 0px 0px 35px green, -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;transition:all .2s ease;font-family: 'Dongle', sans-serif;border:2px solid #FFAC24;border-radius:100px;}
+.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{font-weight:bold;color:#fff;text-shadow:0 0 5px #ed7300,0 0 6px green;transition:all .2s ease;font-family: 'Dongle', sans-serif;border:4px double #d2c376;border-radius:1000px;width:48px;height:48px;margin:-2px 0px 0px -2px;
+background:linear-gradient(45deg, #555555, #050709, #555555);}
