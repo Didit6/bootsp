@@ -3,7 +3,7 @@ body{outline:none;padding:0px;margin:0px;display: flex;justify-content: center;a
 .one{width:100%;height:50%;}
 .two{width:100%;height:50%;outline:none;padding:0px;margin:0px;}
 .wadah{display: flex;flex-direction: row;flex-wrap: nowrap;position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 0;width:100%;bottom:50%;justify-content:center;}
-.abc2{background:url(tpuxr/0G.png) no-repeat bottom;width:50%;height:200px;background-size:contain;}
+.abc2{background:url('/tpuxr/0G.png') no-repeat bottom;width:50%;height:200px;background-size:contain;}
 #guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:0;align-items:center;justify-content:center;height:100%;background:url(/tpuxr/pstl.png) no-repeat center 50% transparent;width:340px;box-sizing:border-box;}
 button.string{width:30px;margin:0 7px 0 7px;border:none;float:left;height:inherit;outline:0;cursor:pointer;padding:0!important;z-index:4}
 button.string:first-child{margin-left:48px!important}button#s1,button#s3,button#s4,button#s5,button#s6{margin-left:6px}button#s2{margin-left:6px}
