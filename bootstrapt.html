@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{outline:none;padding:0px;margin:0px;display: flex;justify-content: center;align-items:center;}
+.contener{position:relative;width:100%;height:100%;}
+.one{width:100%;height:50%;}
+.two{width:100%;height:50%;outline:none;padding:0px;margin:0px;}
+.wadah{display: flex;flex-direction: row;flex-wrap: nowrap;position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 0;width:100%;bottom:50%;justify-content:center;}
+.abc2{background:url(/tpuxr/0G.png) no-repeat bottom;width:50%;height:200px;background-size:contain;}
+#guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:0;align-items:center;justify-content:center;height:100%;background:url(/tpuxr/pstl.png) no-repeat center 50% transparent;width:340px;box-sizing:border-box;}
+button.string{width:30px;margin:0 7px 0 7px;border:none;float:left;height:inherit;outline:0;cursor:pointer;padding:0!important;z-index:4}
+button.string:first-child{margin-left:48px!important}button#s1,button#s3,button#s4,button#s5,button#s6{margin-left:6px}button#s2{margin-left:6px}
+#guitarBody button{background-repeat:repeat-y;background-position:center center;background-color:transparent}
+#guitarBody button.string,button.playingSound{background-repeat:repeat-y,repeat-y,no-repeat!important;background-position:center center,center center,center 50%!important;background-color:transparent}
+#btnStop{background:url(/tpuxr/ekxnh.png) no-repeat center right/contain;text-align:left;font-family: 'Dongle', sans-serif;font-size: 25px;}
+#btnHold{background:url(/tpuxr/ekxnh.png) no-repeat center left/contain;text-align:right;font-family: 'Dongle', sans-serif;font-size:25px;}#btnHold:after,#btnStop:before{content:"Hold";font-size:15px;font-family: 'Dongle', sans-serif;background-color:#333;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;color:#ccc;text-shadow:rgba(255,255,255,.5) 0 1px 3px;padding:0;}
+#btnStop:before{content:"Stop"}#btnHold.active:after,#btnHold:active:after{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px orange,0 0 20px red,0 0 25px orange;color:orange;font-family: 'Dongle', sans-serif;}
+#btnHold.active,#btnHold:active{background:url(/tpuxr/chrsr.png) no-repeat center left/contain;font-family: 'Dongle', sans-serif;}
+#btnStop:active:before{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px red,0 0 20px red,0 0 25px red;color:red;font-family: 'Dongle', sans-serif;}
+#btnStop:active{background:url(/tpuxr/gcggv.png) no-repeat center right/contain;font-family: 'Dongle', sans-serif;}
+#btnPick{background:url(/storage/emulated/0/DCIM/Screenshots/Chordx/png/pick-off.png) no-repeat center center/contain;width:100px;font-size:22px;font-family: 'Dongle', sans-serif;}
+#s1 {background-image: url(/tpuxr/1.png); /*1.png*/}
+#s2 {background-image: url(/tpuxr/2.png);}
+#s3 {background-image: url(/tpuxr/3.png);}
+#s4 {background-image: url(/tpuxr/4.png);}
+#s5 {background-image: url(/tpuxr/5.png);}
+#s6 {background-image: url(/tpuxr/6.png);}
+#s1:hover {background-image: url(/tpuxr/br1.png), url(/tpuxr/1.png);}
+#s2:hover {background-image: url(/tpuxr/br1.png), url(/tpuxr/2.png);}
+#s3:hover {background-image: url(/tpuxr/br1.png), url(/tpuxr/3.png);}
+#s4:hover {background-image: url(/tpuxr/br1.png), url(/tpuxr/4.png);}
+#s5:hover {background-image: url(/tpuxr/br1.png), url(/tpuxr/5.png);}
+#s6:hover {background-image: url(/tpuxr/br1.png), url(/tpuxr/6.png);}
+#s1.string.playingSound {background-image: url(/tpuxr/br1.png), url(/tpuxr/2.gif), url(/tpuxr/luz.png); /*1.gif|luz.png*/}
+#s2.string.playingSound {background-image: url(/tpuxr/br1.png), url(/tpuxr/2.gif), url(/tpuxr/luz.png);}
+#s3.string.playingSound {background-image: url(/tpuxr/br1.png), url(/tpuxr/3.gif), url(/tpuxr/luz.png);}
+#s4.string.playingSound {background-image: url(/tpuxr/br1.png), url(/tpuxr/4.gif), url(/tpuxr/luz.png);}
+#s5.string.playingSound {background-image: url(/tpuxr/br1.png), url(/tpuxr/5.gif), url(/tpuxr/luz.png);}
+#s6.string.playingSound {background-image: url(/tpuxr/br1.png), url(/tpuxr/6.gif), url(/tpuxr/luz.png);}
+.headstck_2{z-index:1;width:100%;height:50px;position:absolute;background-image:linear-gradient(to right,#2d1e04,#5c3e0b,#2d1e04);}
+.drpdn::after{height:32px;width:35px;font-family: 'Dongle', sans-serif;border-radius:10%;border: 1px solid transparent;content:'\25BC';position:absolute;top:0;right:0;background-image: 
+    linear-gradient(to right,#000,grey,#000),
+    -webkit-linear-gradient(bottom left, #ED9715 20px, #EB5E27, #EB5E27, #EB5E27 90%); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;box-shadow:0 0 25px 5px #000;transition:.25s all ease;pointer-events:none;margin:0 auto;text-align:center;align-items:center;justify-content:center;display:flex;color:red;}
+.drpdn:hover::after{color:#f39c12;font-family: 'Dongle', sans-serif;}
+.nongol{appearance:none;outline:0;border:1px solid transparent;box-shadow:none;background-image: 
+    linear-gradient(to right,#121824,#121824,#121824),
+    -webkit-linear-gradient(bottom left, #EFC828 10px, #F0AD30 20px, #ED9715, #ED874F, #EB5E27 90%); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  flex:1;padding-left: 3px;color:#fff;text-shadow:rgba(255,255,255,.5) 0 1px 3px;font-weight:700;font-size:14px;cursor:pointer;border-radius:2px;font-family: 'Dongle', sans-serif;}.nongol::-ms-expand{display:none;}
+.drpdn{width:50%;height:34px;margin:12px 20px 0px 0px;border-radius:0;position:relative;display:flex;overflow:hidden;background-image: 
+    linear-gradient(to right,#000,grey,#000),
+    -webkit-linear-gradient(bottom left, #EFC828 10px, #F0AD30 20px, #ED9715, #ED874F, #EB5E27 90%); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;box-shadow:0 0 25px 5px #000;font-family: 'Dongle', sans-serif;}
+.tudgv{display:flex;flex-wrap: wrap;padding:0px 0px 0px 8px;text-align:center;height:35px;margin-top:-4px;align-items:center;}
+.ft{position:absolute;bottom:0;background-image:linear-gradient(to right,#2d1e04,#5c3e0b,#2d1e04);height:50px;width:100%;text-align:center;}
+.ft button{margin:0px 5px 0px 5px;width:80px;height:38px;font-family: 'Dongle', sans-serif;font-size:0;border:none;outline:0;font-weight:700;color:transparent;cursor:pointer;text-align:center;font-size: 15px;}
+.dcba{background:url(/tpuxr/agc.png) repeat repeat center;margin:0;width:100%;height:50%;position:absolute;bottom:0;}
+.ruutf{margin-left:auto;margin-right:auto;display: flex;flex-wrap: wrap;padding:0px;text-align:center;align-items:center;justify-content:center;width:300px;height:50px;}
+.sn4{background:#050709;width:40px;height:40px;border:1px solid #3e3e3e;margin:25px 0px 5px 0px;border-radius:1000px;}
+.sn5{background:#050709;width:40px;height:40px;border:1px solid #3e3e3e;margin:5px 0px 5px 0px;border-radius:1000px;}
+.sn6{background:#050709;width:40px;height:40px;border:1px solid #3e3e3e;margin:5px 0px 5px 0px;border-radius:1000px;}
+.sn3{background:#050709;width:40px;height:40px;border:1px solid #3e3e3e;margin:25px 0px 5px 0px;border-radius:1000px;}
+.sn2{background:#050709;width:40px;height:40px;border:1px solid #3e3e3e;margin:5px 0px 5px 0px;border-radius:1000px;}
+.sn1{background:#050709;width:40px;height:40px;border:1px solid #3e3e3e;margin:5px 0px 5px 0px;border-radius:1000px;}
+.abc1{width:100px;}
+.abc3{width:100px;}
+.fltl{float:right;}
+.rgtl{float:left;}
+.sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {color:#121824;text-shadow:-1px -1px 1px #000,0 0 1px #6f6f6f;font-size:13px;display:flex;height:40px;align-items:center;justify-content:center;}
+.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{font-weight:bold;color:#fff;text-shadow:0 0 5px #ed7300,0 0 6px green;transition:all .2s ease;font-family: 'Dongle', sans-serif;border:4px double #d2c376;border-radius:1000px;width:38px;height:38px;margin:-2px 0px 0px -2px;
+background:linear-gradient(45deg, #555555, #050709, #555555);}
+@media only screen and (min-width : 320px){
+#guitarBody{height:100%;}.tudgv{margin-top:-5px;}.nongol{padding-left:10px;}.drpdn{width:50%;}}
+@media only screen and (min-width : 400px){
+#guitarBody{bottom:0;height:100%;background:url(/tpuxr/pastilla.png) no-repeat center 50% transparent;width:360px;}
+#guitarBody button.string,button.playingSound{background-repeat:repeat-y,repeat-y,no-repeat!important;background-position:center center,center center,center 50%!important;}
+button.string{width:40px;}button.string:first-child{margin-left:27px!important}.headstck_2{height:60px;}.ft{height:60px;}.ft button{height:45px;width:90px;}.ruutf{width:400px;height:60px;}.drpdn{width:50%;height:38px;position:absolute;justify-content:center;}.drpdn::after{width:38px;height:35px;}.nongol{font-size:18px;padding-left:10px;}.abc2{width:50%;height:260px;}.abc1{width:14%;}.abc3{width:14%;}.sn4{width:52px;height:52px;}.sn5{width:52px;height:52px;}.sn6{width:52px;height:52px;}.sn3{width:52px;height:52px;}.sn2{width:52px;height:52px;}.sn1{width:52px;height:52px;}.sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {height:52px;font-size:16px;}.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{width:50px;height:50px;}.fltl{float:right;margin-top:10px;}.rgtl{float:left;margin-top:10px;}.tudgv{margin-top:8px;}}
+@media only screen and (min-width : 600px){
+.abc2{width:50%;height:350px;}.sn4{width:70px;height:70px;}.sn5{width:70px;height:70px;}.sn6{width:70px;height:70px;}.sn3{width:70px;height:70px;}.sn2{width:70px;height:70px;}.sn1{width:70px;height:70px;}.sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {height:70px;font-size:22px;}.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{width:68px;height:68px;}.fltl{float:right;margin-top:30px;}.rgtl{float:left;margin-top:30px;}.headstck_2{height:70px;}.ft{height:70px;}.ft button{height:50px;width:100px;}.ruutf{width:400px;height:70px;}.drpdn{height:45px;position:absolute;justify-content:center;}.drpdn::after{width:45px;height:43px;}.tudgv{margin-top:12px;}}
+@media only screen and (min-width : 720px){
+  .abc2{width:50%;height:450px;}.sn4{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn5{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn6{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn3{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn2{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn1{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {height:85px;font-size:24px;}.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{width:83px;height:83px;}.fltl{float:right;margin-top:60px;}.rgtl{float:left;margin-top:60px;}.headstck_2{height:80px;}.ft{height:80px;}.ft button{height:60px;width:100px;}.ruutf{width:400px;height:80px;}.drpdn{height:50px;position:absolute;justify-content:center;}.drpdn::after{width:50px;height:48px;}}
+@media only screen and (min-width : 800px){
+.abc2{width:50%;height:450px;}.sn4{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn5{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn6{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn3{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn2{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn1{width:85px;height:85px;margin:15px 0px 15px 0px;}.sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {height:85px;font-size:24px;}.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{width:83px;height:83px;}.fltl{float:right;margin-top:60px;}.rgtl{float:left;margin-top:60px;}.headstck_2{height:80px;}.ft{height:80px;}.ft button{height:60px;width:100px;}.ruutf{width:400px;height:80px;}.drpdn{height:50px;position:absolute;justify-content:center;}.drpdn::after{width:50px;height:48px;}}
+@media only screen and (min-width : 950px){
+  .abc2{width:50%;height:480px;}.sn4{width:95px;height:95px;margin:15px 0px 15px 0px;}.sn5{width:95px;height:95px;margin:15px 0px 15px 0px;}.sn6{width:95px;height:95px;margin:15px 0px 15px 0px;}.sn3{width:95px;height:95px;margin:15px 0px 15px 0px;}.sn2{width:95px;height:95px;margin:15px 0px 15px 0px;}.sn1{width:95px;height:95px;margin:15px 0px 15px 0px;}.sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {height:95px;font-size:26px;}.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{width:93px;height:93px;}.fltl{float:right;margin-top:60px;}.rgtl{float:left;margin-top:60px;}.headstck_2{height:80px;}.ft{height:80px;}.ft button{height:60px;width:100px;}.ruutf{width:400px;height:80px;}.drpdn{height:50px;position:absolute;justify-content:center;}.drpdn::after{width:50px;height:48px;}}
+</style>
+<body>
+<div class="contener">
+ <div class="one">
+   <div class="wadah">
+    <div class="abc1">
+      <div class="fltl">
+      <div class="sn4"><span class="lightOff" id="s4Note"></span></div><div class="sn5">	<span class="lightOff" id="s5Note"></span></div>
+<div class="sn6">	<span class="lightOff" id="s6Note"></span></div>
+    </div></div>
+    <div class="abc2"></div>
+    <div class="abc3">
+   <div class="rgtl">
+    <div class="sn3"><span class="lightOff" id="s3Note"></span></div><div class="sn2">	<span class="lightOff" id="s2Note"></span></div><div class="sn1">
+	<span class="lightOff" id="s1Note"></span></div></div>
+   </div></div>
+ </div>
+<div class="two">
+<div class="headstck_2">
+  <div class="tudgv"><div class="drpdn" id="fl-cchld"><select class="nongol" id="ojk" onchange="ngls()"><option  value="" disabled selected="selected" hidden>Tuning Mode</option><option value="tnsj1">Standard Tunning</option><option value="tnsj2">E flat</option><option value="tnsj3">First fret</option><option value="tnsj4">Second fret</option><option value="tnsj5">Third fret</option><option value="tnsj6">Open C</option><option value="tnsj7">Open D</option><option value="tnsj8">Open G</option>
+  <option value="tnsj9">Modal D</option><option value="tnsj10">Modal G</option><option value="tnsj11">Drop C</option>
+  <option value="tnsj12">Drop D</option><option value="tnsj13">Major Third</option><option value="tnsj14">Minor Third</option><option value="tnsj15">1 and 1/2 step down</option>
+  <option value="tnsj16">2 step down</option><option value="tnsj17">Drop B</option><option value="tnsj18">Double Drop D</option></select></div></div>
+</div>
+<h1 id="title_s" style="font-size:0px;"></h1><div class="dcba"><div id="guitarBody"><button class="string" id="s6" onclick="clickString(this.id); kunci(this);" onmouseover="pickString(this.id)"></button><button class="string" id="s5" onclick="clickString(this.id); kunci(this);" onmouseover="pickString(this.id)"></button><button class="string" id="s4" onclick="clickString(this.id); kunci(this);" onmouseover="pickString(this.id)"></button><button class="string" id="s3" onclick="clickString(this.id); kunci(this);" onmouseover="pickString(this.id)"></button><button class="string" id="s2" onclick="clickString(this.id); kunci(this);" onmouseover="pickString(this.id)"></button><button class="string" id="s1" onclick="clickString(this.id); kunci(this);" onmouseover="pickString(this.id)"></button></div></div>
+<div class="ft"><div class="ruutf"><button class="inactive" id="btnStop" onclick="stopStrings()"></button><button class="inactive" id="btnHold" onclick="holdSound()"></button></div></div></div>
+ </div>
+</div>
+<script>
+function elem(id){
+	var element = document.getElementById(id);
+	return element;}
+function pickString(thisString){if(pick == true) clickString(thisString);}
+function clickString(thisString) {elem('title_s').className='imgTitle';	elem(thisString).className = "string";
+	window[thisString].currentTime = 0;	window[thisString].play();
+	var thisNote = thisString+"Note";	elem(thisString).className = "string playingSound";	elem(thisNote).className = "lightOn";
+	setTimeout(function(){ if(window[thisString].loop != true){
+			elem(thisString).className = "string";	elem(thisNote).className = "lightOff";	if(document.querySelectorAll('.playingSound').length==0){	elem('title_s').className='';
+			}		}	}, 3500);}
+	function holdSound(){	if(s1.loop != true){	s1.loop = s2.loop = s3.loop = s4.loop = s5.loop = s6.loop = true;	elem('btnHold').className = "active";	} else {	s1.loop = s2.loop = s3.loop = s4.loop = s5.loop = s6.loop = false;	elem('btnHold').className = "inactive";	s1.pause(); s2.pause(); s3.pause(); s4.pause(); s5.pause(); s6.pause();	stopStrings();	}}
+function stopStrings(){	elem('title_s').className='';
+	s1.pause(); s2.pause(); s3.pause(); s4.pause(); s5.pause(); s6.pause();	var auxString = document.querySelectorAll('.playingSound');	for (var x in auxString) {
+		if(auxString[x]!==undefined){	auxString[x].className = "string";		}	}
+	var auxNote = document.querySelectorAll(".lightOn");
+	for (x in auxNote) {if(auxNote[x]!==undefined){
+			auxNote[x].className = "lightOff";		}	}}
+function usePick(){	var x = elem('btnPick').className;
+	if(x == 'inactive'){	elem('btnPick').className = 'active';
+		pick = true;	elem("guitarBody").className = 'pickActive';	
+	} else {	elem('btnPick').className = 'inactive';
+		pick = false;	elem("guitarBody").className = '';	}}
+/* ON LOAD */
+(function() {	setTimeout(function(){ 	clickString('s4');
+	}, 500);})();
+function ngls(){ var scbk = document.getElementById('ojk');
+   var ojk = scbk.options[scbk.selectedIndex];
+   if(scbk.value == 'tnsj1') {  document.getElementById('s1Note').innerHTML = 'e';  document.getElementById('s2Note').innerHTML = 'B'; document.getElementById('s3Note').innerHTML = 'G'; document.getElementById('s4Note').innerHTML = 'D'; document.getElementById('s5Note').innerHTML = 'A'; document.getElementById('s6Note').innerHTML = 'E';
+    s1 = new Audio('/nyaring/strt/doebcekd.ogg'); s2 = new Audio('/nyaring/strt/kqycrbfn.ogg'); s3 = new Audio('/nyaring/strt/faiufcgfm.ogg'); s4 = new Audio('/nyaring/strt/aktxydzd.ogg'); s5 = new Audio('/nyaring/strt/amtxauv.ogg'); s6 = new Audio('/nyaring/strt/ucvxdEzd.ogg');}
+ else if(scbk.value == 'tnsj2') { 
+    document.getElementById('s1Note').innerHTML = 'e4';
+    document.getElementById('s2Note').innerHTML = 'B3';
+    document.getElementById('s3Note').innerHTML = 'G3';
+    document.getElementById('s4Note').innerHTML = 'D3';
+   	document.getElementById('s5Note').innerHTML = 'A2';
+    document.getElementById('s6Note').innerHTML = 'E2';   
+  s1 = new Audio('/nyaring/eflt/rxfvg.ogg'); s2 = new Audio('/nyaring/eflt/txhidg.ogg'); s3 = new Audio('/nyaring/eflt/bixtcc.ogg'); s4 = new Audio('/nyaring/eflt/ygzycy.ogg'); s5 = new Audio('/nyaring/eflt/tcyvxr.ogg'); s6 = new Audio('/nyaring/eflt/rzrxxt.ogg');} 
+ else if(scbk.value == 'tnsj3') {
+ 	document.getElementById('s1Note').innerHTML = 'f4';
+    document.getElementById('s2Note').innerHTML = 'C4';
+    document.getElementById('s3Note').innerHTML = 'G#3';
+    document.getElementById('s4Note').innerHTML = 'D#3';
+   	document.getElementById('s5Note').innerHTML = 'A#2';
+    document.getElementById('s6Note').innerHTML = 'F2';
+  s1 = new Audio('/nyaring/frt/rcfubx.ogg'); s2 = new Audio('/nyaring/frt/wibxfn.ogg'); s3 = new Audio('/nyaring/frt/uezhv.ogg'); s4 = new Audio('/nyaring/frt/rxuvsr.ogg'); s5 = new Audio('/nyaring/frt/urzru.ogg'); s6 = new Audio('/nyaring/frt/tcyccy.ogg');   
+}
+ else if(scbk.value == 'tnsj4') {
+ 	document.getElementById('s1Note').innerHTML = 'f#4';
+    document.getElementById('s2Note').innerHTML = 'C#4';
+    document.getElementById('s3Note').innerHTML = 'A3';
+    document.getElementById('s4Note').innerHTML = 'E3';
+   	document.getElementById('s5Note').innerHTML = 'B2';
+    document.getElementById('s6Note').innerHTML = 'F#2';       
+      s1 = new Audio('/nyaring/scr/knEzm.ogg'); s2 = new Audio('/nyaring/scr/otxgcR.ogg'); s3 = new Audio('/nyaring/scr/oqpxF.ogg'); s4 = new Audio('/nyaring/scr/kwfxjb.ogg'); s5 = new Audio('/nyaring/scr/iqinxe.ogg'); s6 = new Audio('/nyaring/scr/utxzgg.ogg');   
+} 
+ else if(scbk.value == 'tnsj5') {
+ 	document.getElementById('s1Note').innerHTML = 'g4';
+    document.getElementById('s2Note').innerHTML = 'D4';
+    document.getElementById('s3Note').innerHTML = 'A#3';
+    document.getElementById('s4Note').innerHTML = 'F3';
+   	document.getElementById('s5Note').innerHTML = 'C3';
+    document.getElementById('s6Note').innerHTML = 'G2';        
+        s1 = new Audio('/nyaring/thr/lqdtxf.ogg'); s2 = new Audio('/nyaring/thr/pqzfzd.ogg'); s3 = new Audio('/nyaring/thr/txhidg.ogg'); s4 = new Audio('/nyaring/thr/owxts.ogg'); s5 = new Audio('/nyaring/thr/lqxgm.ogg'); s6 = new Audio('/nyaring/thr/jbrxtc.ogg');   }
+ else if(scbk.value == 'tnsj6') {
+ 	document.getElementById('s1Note').innerHTML = 'e4';
+    document.getElementById('s2Note').innerHTML = 'C4';
+    document.getElementById('s3Note').innerHTML = 'G3';
+    document.getElementById('s4Note').innerHTML = 'C3';
+   	document.getElementById('s5Note').innerHTML = 'G2';
+    document.getElementById('s6Note').innerHTML = 'C2';      
+      s1 = new Audio('/nyaring/opc/doebcekd.ogg'); s2 = new Audio('/nyaring/opc/wibxfn.ogg'); s3 = new Audio('/nyaring/opc/faiufcgfm.ogg'); s4 = new Audio('/nyaring/opc/lqxgm.ogg'); s5 = new Audio('/nyaring/opc/jbrxtc.ogg'); s6 = new Audio('/nyaring/opc/qkxrx.ogg');   
+} 
+ else if(scbk.value == 'tnsj7') {
+ 	document.getElementById('s1Note').innerHTML = 'd4';
+    document.getElementById('s2Note').innerHTML = 'A3';
+    document.getElementById('s3Note').innerHTML = 'F#3';
+    document.getElementById('s4Note').innerHTML = 'D3';
+   	document.getElementById('s5Note').innerHTML = 'A2';
+    document.getElementById('s6Note').innerHTML = 'D2';      
+    s1 = new Audio('/nyaring/opnd/pqzfzd.ogg'); s2 = new Audio('/nyaring/opnd/oqpxF.ogg'); s3 = new Audio('/nyaring/opnd/bixtcc.ogg'); s4 = new Audio('/nyaring/opnd/aktxydzd.ogg'); s5 = new Audio('/nyaring/opnd/amtxauv.ogg'); s6 = new Audio('/nyaring/opnd/bgazd.ogg');   
+  }
+  else if(scbk.value == 'tnsj8') {
+  	document.getElementById('s1Note').innerHTML = 'd4';
+    document.getElementById('s2Note').innerHTML = 'B3';
+    document.getElementById('s3Note').innerHTML = 'G3';
+    document.getElementById('s4Note').innerHTML = 'D3';
+   	document.getElementById('s5Note').innerHTML = 'G2';
+    document.getElementById('s6Note').innerHTML = 'D2';        
+    s1 = new Audio('/nyaring/opg/pqzfzd.ogg'); s2 = new Audio('/nyaring/opg/kqycrbfn.ogg'); s3 = new Audio('/nyaring/opg/faiufcgfm.ogg'); s4 = new Audio('/nyaring/opg/aktxydzd.ogg'); s5 = new Audio('/nyaring/opg/jbrxtc.ogg'); s6 = new Audio('/nyaring/opg/bgazd.ogg');         
+    } 
+  else if(scbk.value == 'tnsj9') {
+  	document.getElementById('s1Note').innerHTML = 'd4';
+    document.getElementById('s2Note').innerHTML = 'A3';
+    document.getElementById('s3Note').innerHTML = 'G3';
+    document.getElementById('s4Note').innerHTML = 'D3';
+   	document.getElementById('s5Note').innerHTML = 'A2';
+    document.getElementById('s6Note').innerHTML = 'D2';        
+   s1 = new Audio('/nyaring/mdl/pqzfzd.ogg'); s2 = new Audio('/nyaring/mdl/oqpxF.ogg'); s3 = new Audio('/nyaring/mdl/faiufcgfm.ogg'); s4 = new Audio('/nyaring/mdl/aktxydzd.ogg'); s5 = new Audio('/nyaring/mdl/amtxauv.ogg'); s6 = new Audio('/nyaring/mdl/bgazd.ogg');             
+    }
+  else if(scbk.value == 'tnsj10') {
+  	document.getElementById('s1Note').innerHTML = 'd4';
+    document.getElementById('s2Note').innerHTML = 'C4';
+    document.getElementById('s3Note').innerHTML = 'G3';
+    document.getElementById('s4Note').innerHTML = 'D3';
+   	document.getElementById('s5Note').innerHTML = 'G2';
+    document.getElementById('s6Note').innerHTML = 'D2';       
+  s1 = new Audio('/nyaring/mdg/pqzfzd.ogg'); s2 = new Audio('/nyaring/mdg/wibxfn.ogg'); s3 = new Audio('/nyaring/mdg/faiufcgfm.ogg'); s4 = new Audio('/nyaring/mdg/aktxydzd.ogg'); s5 = new Audio('/nyaring/mdg/jbrxtc.ogg'); s6 = new Audio('/nyaring/mdg/bgazd.ogg'); } 
+  else if(scbk.value == 'tnsj11') {
+  	document.getElementById('s1Note').innerHTML = 'd4';
+    document.getElementById('s2Note').innerHTML = 'A3';
+    document.getElementById('s3Note').innerHTML = 'F3';
+    document.getElementById('s4Note').innerHTML = 'C3';
+   	document.getElementById('s5Note').innerHTML = 'G2';
+    document.getElementById('s6Note').innerHTML = 'C2';        
+  s1 = new Audio('/nyaring/drc/pqzfzd.ogg'); s2 = new Audio('/nyaring/drc/oqpxF.ogg'); s3 = new Audio('/nyaring/drc/owxts.ogg'); s4 = new Audio('/nyaring/drc/lqxgm.ogg'); s5 = new Audio('/nyaring/drc/jbrxtc.ogg'); s6 = new Audio('/nyaring/drc/qkxrx.ogg');    }
+  else if(scbk.value == 'tnsj12') {
+  	document.getElementById('s1Note').innerHTML = 'e4';
+    document.getElementById('s2Note').innerHTML = 'B3';
+    document.getElementById('s3Note').innerHTML = 'G3';
+    document.getElementById('s4Note').innerHTML = 'D3';
+   	document.getElementById('s5Note').innerHTML = 'A2';
+    document.getElementById('s6Note').innerHTML = 'D2';         
+  s1 = new Audio('/nyaring/drd/doebcekd.ogg'); s2 = new Audio('/nyaring/drd/kqycrbfn.ogg'); s3 = new Audio('/nyaring/drd/faiufcgfm.ogg'); s4 = new Audio('/nyaring/drd/aktxydzd.ogg'); s5 = new Audio('/nyaring/drd/amtxauv.ogg'); s6 = new Audio('/nyaring/drd/bgazd.ogg');} 
+  else if(scbk.value == 'tnsj13') {
+  	document.getElementById('s1Note').innerHTML = 'g#4';
+    document.getElementById('s2Note').innerHTML = 'E4';
+    document.getElementById('s3Note').innerHTML = 'C4';
+    document.getElementById('s4Note').innerHTML = 'G#3';
+   	document.getElementById('s5Note').innerHTML = 'E3';
+    document.getElementById('s6Note').innerHTML = 'C3';          
+  s1 = new Audio('/nyaring/mjrt/qzdeth.ogg'); s2 = new Audio('/nyaring/mjrt/doebcekd.ogg'); s3 = new Audio('/nyaring/mjrt/wibxfn.ogg'); s4 = new Audio('/nyaring/mjrt/uezhv.ogg'); s5 = new Audio('/nyaring/mjrt/kwfxjb.ogg'); s6 = new Audio('/nyaring/mjrt/lqxgm.ogg'); }
+  else if(scbk.value == 'tnsj14') {
+  	document.getElementById('s1Note').innerHTML = 'd#4';
+    document.getElementById('s2Note').innerHTML = 'C4';
+    document.getElementById('s3Note').innerHTML = 'A3';
+    document.getElementById('s4Note').innerHTML = 'F#3';
+   	document.getElementById('s5Note').innerHTML = 'D#3';
+    document.getElementById('s6Note').innerHTML = 'C3';        
+ s1 = new Audio('/nyaring/mnrt/rxfvg.ogg'); s2 = new Audio('/nyaring/mnrt/wibxfn.ogg'); s3 = new Audio('/nyaring/mnrt/oqpxF.ogg'); s4 = new Audio('/nyaring/mnrt/bixtcc.ogg'); s5 = new Audio('/nyaring/mnrt/rxuvsr.ogg'); s6 = new Audio('/nyaring/mnrt/lqxgm.ogg');}
+else if(scbk.value == 'tnsj15') {
+	document.getElementById('s1Note').innerHTML = 'c#4';
+    document.getElementById('s2Note').innerHTML = 'G#3';
+    document.getElementById('s3Note').innerHTML = 'E3';
+    document.getElementById('s4Note').innerHTML = 'B2';
+   	document.getElementById('s5Note').innerHTML = 'F#2';
+    document.getElementById('s6Note').innerHTML = 'C#2';
+s1 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/dobjvgx.mp3'); 
+s2 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/apfbjvj.mp3');
+s3 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/hqhcfc.mp3');
+s4 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/bosgcg.mp3');
+s5 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/makvskh.mp3');
+s6 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/gpgcjbm.mp3');
+}
+else if(scbk.value == 'tnsj16') {
+	document.getElementById('s1Note').innerHTML = 'c4';
+    document.getElementById('s2Note').innerHTML = 'G3';
+    document.getElementById('s3Note').innerHTML = 'D#3';
+    document.getElementById('s4Note').innerHTML = 'A#2';
+   	document.getElementById('s5Note').innerHTML = 'F2';
+    document.getElementById('s6Note').innerHTML = 'C2';
+s1 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/kjadhvx.mp3');
+s2 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/oxhvvgc.mp3');
+s3 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/haicbv.mp3');
+s4 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/vajdhc.mp3');
+s5 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/ldhdxvh.mp3');
+s6 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/tsughc.mp3');  
+}
+else if(scbk.value == 'tnsj17') {
+	document.getElementById('s1Note').innerHTML = 'c#4';
+    document.getElementById('s2Note').innerHTML = 'G#3';
+    document.getElementById('s3Note').innerHTML = 'E3';
+    document.getElementById('s4Note').innerHTML = 'B2';
+   	document.getElementById('s5Note').innerHTML = 'F#2';
+    document.getElementById('s6Note').innerHTML = 'B1';
+s1 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/dobjvgx.mp3');
+s2 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/apfbjvj.mp3');
+s3 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/hqhcfc.mp3');
+s4 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/bosgcg.mp3');
+s5 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/makvskh.mp3');
+s6 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/mtvhvce.mp3');
+}
+else if(scbk.value == 'tnsj18') {
+	document.getElementById('s1Note').innerHTML = 'd4';
+    document.getElementById('s2Note').innerHTML = 'B3';
+    document.getElementById('s3Note').innerHTML = 'G3';
+    document.getElementById('s4Note').innerHTML = 'D3';
+   	document.getElementById('s5Note').innerHTML = 'A2';
+    document.getElementById('s6Note').innerHTML = 'D2';
+s1 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/spdhbhv.mp3');
+s2 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/fifxcvg.mp3');
+s3 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/oxhvvgc.mp3');
+s4 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/wivgchvh.mp3');
+s5 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/ifxcvhv.mp3');
+s6 = new Audio('/nyaring/aovhctsd/gtrakelc/sevn/cirdxgvv.mp3');
+}}
+</script>
+<script src="/tpxur/service-worker-controller.js"></script>
+<script>
+new SW();
+</script>   
+</body>
+</html>
