@@ -3,14 +3,14 @@ body{outline:none;padding:0px;margin:0px;display: flex;justify-content: center;a
 .one{width:100%;height:50%;}
 .two{width:100%;height:50%;outline:none;padding:0px;margin:0px;}
 .wadah{display: flex;flex-direction: row;flex-wrap: nowrap;position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 0;width:100%;bottom:50%;justify-content:center;}
-.abc2{background:url(/0G.png) no-repeat bottom;width:50%;height:200px;background-size:contain;}
-#guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:0;align-items:center;justify-content:center;height:100%;background:url(/tpuxr/pstl.png) no-repeat center 50% transparent;width:340px;box-sizing:border-box;}
+.abc2{background-image:url("/0G.png") no-repeat bottom;width:50%;height:200px;background-size:contain;}
+#guitarBody{left: 0;right: 0;margin: 0 auto;position:absolute;bottom:0;align-items:center;justify-content:center;height:100%;background-image:url("/tpuxr/pstl.png") no-repeat center 50% transparent;width:340px;box-sizing:border-box;}
 button.string{width:30px;margin:0 7px 0 7px;border:none;float:left;height:inherit;outline:0;cursor:pointer;padding:0!important;z-index:4}
 button.string:first-child{margin-left:48px!important}button#s1,button#s3,button#s4,button#s5,button#s6{margin-left:6px}button#s2{margin-left:6px}
 #guitarBody button{background-repeat:repeat-y;background-position:center center;background-color:transparent}
 #guitarBody button.string,button.playingSound{background-repeat:repeat-y,repeat-y,no-repeat!important;background-position:center center,center center,center 50%!important;background-color:transparent}
-#btnStop{background:url(/tpuxr/ekxnh.png) no-repeat center right/contain;text-align:left;font-family: 'Dongle', sans-serif;font-size: 25px;}
-#btnHold{background:url(/tpuxr/ekxnh.png) no-repeat center left/contain;text-align:right;font-family: 'Dongle', sans-serif;font-size:25px;}#btnHold:after,#btnStop:before{content:"Hold";font-size:15px;font-family: 'Dongle', sans-serif;background-color:#333;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;color:#ccc;text-shadow:rgba(255,255,255,.5) 0 1px 3px;padding:0;}
+#btnStop{background-image:url("/tpuxr/ekxnh.png") no-repeat center right/contain;text-align:left;font-family: 'Dongle', sans-serif;font-size: 25px;}
+#btnHold{background-image:url("/tpuxr/ekxnh.png") no-repeat center left/contain;text-align:right;font-family: 'Dongle', sans-serif;font-size:25px;}#btnHold:after,#btnStop:before{content:"Hold";font-size:15px;font-family: 'Dongle', sans-serif;background-color:#333;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;color:#ccc;text-shadow:rgba(255,255,255,.5) 0 1px 3px;padding:0;}
 #btnStop:before{content:"Stop"}#btnHold.active:after,#btnHold:active:after{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px orange,0 0 20px red,0 0 25px orange;color:orange;font-family: 'Dongle', sans-serif;}
 #btnHold.active,#btnHold:active{background:url(/tpuxr/chrsr.png) no-repeat center left/contain;font-family: 'Dongle', sans-serif;}
 #btnStop:active:before{text-shadow:rgba(255,255,255,.5) 0 1px 3px,0 0 15px red,0 0 20px red,0 0 25px red;color:red;font-family: 'Dongle', sans-serif;}
@@ -73,7 +73,7 @@ background:linear-gradient(45deg, #555555, #050709, #555555);}
 @media only screen and (min-width : 320px){
 #guitarBody{height:100%;}.tudgv{margin-top:-5px;}.nongol{padding-left:10px;}.drpdn{width:50%;}}
 @media only screen and (min-width : 400px){
-#guitarBody{bottom:0;height:100%;background:url(/tpuxr/pastilla.png) no-repeat center 50% transparent;width:360px;}
+#guitarBody{bottom:0;height:100%;background-image:url("/tpuxr/pastilla.png") no-repeat center 50% transparent;width:360px;}
 #guitarBody button.string,button.playingSound{background-repeat:repeat-y,repeat-y,no-repeat!important;background-position:center center,center center,center 50%!important;}
 button.string{width:40px;}button.string:first-child{margin-left:27px!important}.headstck_2{height:60px;}.ft{height:60px;}.ft button{height:45px;width:90px;}.ruutf{width:400px;height:60px;}.drpdn{width:50%;height:38px;position:absolute;justify-content:center;}.drpdn::after{width:38px;height:35px;}.nongol{font-size:18px;padding-left:10px;}.abc2{width:50%;height:260px;}.abc1{width:14%;}.abc3{width:14%;}.sn4{width:52px;height:52px;}.sn5{width:52px;height:52px;}.sn6{width:52px;height:52px;}.sn3{width:52px;height:52px;}.sn2{width:52px;height:52px;}.sn1{width:52px;height:52px;}.sn6 span,.sn5 span,.sn4 span,.sn3 span,.sn2 span,.sn1 span {height:52px;font-size:16px;}.sn6 .lightOn,.sn6 .lightOn span, .sn5 .lightOn,.sn5 .lightOn span, .sn4 .lightOn,.sn4 .lightOn span, .sn3 .lightOn,.sn3 .lightOn span, .sn2 .lightOn,.sn2 .lightOn span, .sn1 .lightOn,.sn1 .lightOn span{width:50px;height:50px;}.fltl{float:right;margin-top:10px;}.rgtl{float:left;margin-top:10px;}.tudgv{margin-top:8px;}}
 @media only screen and (min-width : 600px){
