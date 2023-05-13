@@ -7,7 +7,7 @@ var gbr4b = document.getElementById("ig4");
 var gidc2b = document.createElement('div');
 gidc2b.setAttribute("id","grd2");
 document.getElementById("DIV2").appendChild(gidc2b);
-for(b=0;b<10;b++){
+for(b=0;b<35;b++){
 var nmsx2b = ["Ab","Ab11","Ab13","Ab6","Ab69","Ab7","Ab7#9","Ab7b5","Ab7b9","Ab7sus4","Ab9","Ab9#11","Ab9b5","Abadd9","Abalt","Abaug","Abaug7","Abaug9","Abdim","Abdim7","Abm","Abm11","Abm6","Abm69","Abm7","Abm9","Abmadd9","Abmaj11","Abmaj13","Abmaj7","Abmaj7#5","Abmaj7b5","Abmaj9","Absus2","Absus4"];
 var btnx2b = document.createElement("div");
 btnx2b.innerHTML = nmsx2b[b];
