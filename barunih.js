@@ -17,9 +17,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";}
 
 // show hide
-var divs = ["DIV1","DIV2","DIV3","DIV4","DIV5","DIV6","DIV7","DIV8","DIV9","DIV10","DIV11","DIV12"];
+var divs = ["DIV1","DIV2","DIV3","DIV4","DIV5","DIV6","DIV7","DIV8","DIV9","DIV10","DIV10","DIV11"];
 var visibleDivId = null;
-function diV(divId) {
+function dil(divId) {
   if(visibleDivId === divId) {visibleDivId = null;} else {visibleDivId = divId;}
       hideNonVisibleDivs();}
 function hideNonVisibleDivs() { var i, divId, div;
@@ -34,7 +34,7 @@ function hideNonVisibleDivs() { var i, divId, div;
 // show hide kotak
 var divs2 = ["kt1","kt2"];
 var visiblId = null;
-function Divx(dixvId) {
+function ivx(dixvId) {
   if(visiblId === dixvId) {visiblId = null;} else {visiblId = dixvId;}
       hideNonVDivs();}
 function hideNonVDivs() { var i, dixvId, divx;
@@ -45,13 +45,3 @@ function hideNonVDivs() { var i, dixvId, divx;
 } else {
 	  divx.style.display = "none";
 }}}
-
-// create div and span
-for (k=0;k<2;k++){
-for (g=0;g<divs.length;g++){
-var spnx = document.createElement("span");
-spnx.setAttribute("class", "iconx");
-spnx.innerHTML = "&#8597;";
-document.getElementById(divs[g]).appendChild(spnx);
- }
-}
