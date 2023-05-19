@@ -23,9 +23,9 @@ function diV(divId) {
   if(visibleDivId === divId) {visibleDivId = null;} else {visibleDivId = divId;}
       hideNonVisibleDivs();}
 function hideNonVisibleDivs() { var i, divId, div;
-  for(i = 0; i < divs.length; i++) { divId = divs[i];
+ for(i = 0; i < divs.length; i++) { divId = divs[i];
     div = document.getElementById(divId);
-  if(visibleDivId === divId) {
+ if(visibleDivId === divId) {
   	div.style.display = "block";
 } else {
 	  div.style.display = "none";
@@ -45,53 +45,13 @@ function hideNonVDivs() { var i, dixvId, divx;
 } else {
 	  divx.style.display = "none";
 }}}
-  
-// create span arrow down
-var spnx1 = document.createElement('span');
-spnx1.innerHTML = "&#8597;";
-spnx1.setAttribute("class","iconx");
-document.getElementById("DIV1").appendChild(spnx1);
-var spnx2 = document.createElement('span');
-spnx2.innerHTML = "&#8597;";
-spnx2.setAttribute("class","iconx");
-document.getElementById("DIV2").appendChild(spnx2);
-var spnx3 = document.createElement('span');
-spnx3.innerHTML = "&#8597;";
-spnx3.setAttribute("class","iconx");
-document.getElementById("DIV3").appendChild(spnx3);
-var spnx4 = document.createElement('span');
-spnx4.innerHTML = "&#8597;";
-spnx4.setAttribute("class","iconx");
-document.getElementById("DIV4").appendChild(spnx4);
-var spnx5 = document.createElement('span');
-spnx5.innerHTML = "&#8597;";
-spnx5.setAttribute("class","iconx");
-document.getElementById("DIV5").appendChild(spnx5);
-var spnx6 = document.createElement('span');
-spnx6.innerHTML = "&#8597;";
-spnx6.setAttribute("class","iconx");
-document.getElementById("DIV6").appendChild(spnx6);
-var spnx7 = document.createElement('span');
-spnx7.innerHTML = "&#8597;";
-spnx7.setAttribute("class","iconx");
-document.getElementById("DIV7").appendChild(spnx7);
-var spnx8 = document.createElement('span');
-spnx8.innerHTML = "&#8597;";
-spnx8.setAttribute("class","iconx");
-document.getElementById("DIV8").appendChild(spnx8);
-var spnx9 = document.createElement('span');
-spnx9.innerHTML = "&#8597;";
-spnx9.setAttribute("class","iconx");
-document.getElementById("DIV9").appendChild(spnx9);
-var spnx10 = document.createElement('span');
-spnx10.innerHTML = "&#8597;";
-spnx10.setAttribute("class","iconx");
-document.getElementById("DIV10").appendChild(spnx10);
-var spnx11 = document.createElement('span');
-spnx11.innerHTML = "&#8597;";
-spnx11.setAttribute("class","iconx");
-document.getElementById("DIV11").appendChild(spnx11);
-var spnx12 = document.createElement('span');
-spnx12.innerHTML = "&#8597;";
-spnx12.setAttribute("class","iconx");
-document.getElementById("DIV12").appendChild(spnx12);
+
+// create div and span
+for (k=0;k<2;k++){
+for (g=0;g<divs.length;g++){
+var spnx = document.createElement("span");
+spnx.setAttribute("class", "iconx");
+spnx.innerHTML = "&#8597;";
+document.getElementById(divs[g]).appendChild(spnx);
+ }
+}
