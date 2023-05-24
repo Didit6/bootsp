@@ -45,3 +45,18 @@ function hideNonVDivs() { var i, dixvId, divx;
 } else {
 	  divx.style.display = "none";
 }}}
+
+// show hide filter chord
+var divs3 = ["fil1","fil2","fil3","fil4","fil5"];
+var visibgh = null;
+function funcz(divFilt) {
+  if(visibgh === divFilt) {visibgh = null;} else {visibgh = divFilt;}
+      hideNhmb();}
+function hideNhmb() { var i, divFilt, divn;
+ for(i = 0; i < divs3.length; i++) { divFilt = divs3[i];
+  divn = document.getElementById(divFilt);
+ if(visibgh === divFilt) {
+  divn.style.display = "block";
+} else {
+  divn.style.display = "none";
+}}}
