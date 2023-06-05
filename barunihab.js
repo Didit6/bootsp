@@ -24,21 +24,21 @@ butnv[0].onclick = function() {
 	gbr4b.src = "https://1.bp.blogspot.com/-X8pZCL1VUhU/YMsYKZpX5dI/AAAAAAAAAcc/XPAPVp5H4qQNut8-luthi1rXocJ0B4wAQCPcBGAsYHg/s0/ab%2B%25283%2529.png";
 }
 butnv[1].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-IcxRmAj7_k8/YMsZgkxsc-I/AAAAAAAAAcs/PTl_0chlER86GkCk2MKg2zOUeHsYmiwIQCPcBGAsYHg/s0/ab11.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-yzWzsl0DgGU/YMsZgpCFnFI/AAAAAAAAAcs/UDlWJSbo8GA88NJRj2RZiZWyAZGPY5_1ACPcBGAsYHg/s0/ab11%2B%25282%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-5Q8fPzTWg_A/YMsZghIyk3I/AAAAAAAAAcs/Y7wQFe5gcB8Xf5On5drhxbPsusduXF-2QCPcBGAsYHg/s0/ab11%2B%25281%2529.png";
 	gbr4b.src = "https://1.bp.blogspot.com/-1X3jWKAdS-s/YMsZgpTqDZI/AAAAAAAAAcs/BrE3fuhxI2MY2DCB0jMYfqfZ3sTosTubQCPcBGAsYHg/s0/ab11%2B%25283%2529.png";
 }
 butnv[2].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-wXtR1D25fh4/YMsaEUqTxgI/AAAAAAAAAc4/wQzfGrnyTeAVc3FyejEYsDsG9pORnEpcgCPcBGAsYHg/s0/ab13.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-ldVIBj3Y8p4/YMsaEYfUaUI/AAAAAAAAAc4/23mOKedgSiUMclAGWG8BeQYLJnh5Fc8xwCPcBGAsYHg/s0/ab13%2B%25282%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-0jtXfZaS8XM/YMsaEWMHMGI/AAAAAAAAAc4/CBE27U5_OW4ZprR95SuBEWJl7FRMC71TACPcBGAsYHg/s0/ab13%2B%25281%2529.png";
 	gbr4b.src = "https://1.bp.blogspot.com/-WmeKHWUfsm8/YMsaEV7W56I/AAAAAAAAAc4/6wRGfEVKGOI-4tN6kum621pdpJSx1v-UACPcBGAsYHg/s0/ab13%2B%25283%2529.png";
 }
 butnv[3].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-jkor9VNpjPg/YMsaguIvjhI/AAAAAAAAAdA/9d3ko8Wt98grH6NyOSLhMucDCQLa8M50QCPcBGAsYHg/s0/ab6.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-4yjPup2Pzzw/YMsagm5xJ0I/AAAAAAAAAdA/2zblekP9YNYnfOVH48vEcJftV8H8baz6ACPcBGAsYHg/s0/ab6%2B%25282%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-48x5W7M-xDE/YMsagpxjdcI/AAAAAAAAAdA/xdB4Fb0Cn3YRJ2n9RYJPiWpvk4_2HLxJgCPcBGAsYHg/s0/ab6%2B%25281%2529.png";
@@ -157,7 +157,7 @@ butnv[19].onclick = function() {
 	gbr4b.src = "https://1.bp.blogspot.com/-V_A2UrV8zjM/YMsq-tO-bkI/AAAAAAAAAfc/LuG0_SPDv2gHIU-LOE95ej3xQtvbcZKzACPcBGAsYHg/s0/abdim7%2B%25283%2529.png";
 }
 butnv[20].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-732dj-CQ2Sk/YMsriwsKQjI/AAAAAAAAAfo/XuFIdIhNygUIp3pr9J6pNVOb1dieX7LoACPcBGAsYHg/s0/abm.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-CmjWrg-hDcQ/YMsri99sZpI/AAAAAAAAAfo/ZIa_K1l03Kkae4hMPMRuyJW9yW9zXAm8QCPcBGAsYHg/s0/abm%2B%25281%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-Nbmz_9Fl5WY/YMsri9CL6mI/AAAAAAAAAfo/-9GnXXp0cPwwlV1wTiDhbfwt7m0jM-AEgCPcBGAsYHg/s0/abm%2B%25282%2529.png";
@@ -185,35 +185,35 @@ butnv[23].onclick = function() {
 	gbr4b.src = "https://1.bp.blogspot.com/-YsQMTXDoc4I/YMstyRPHo-I/AAAAAAAAAgE/afzKx8tfRXsghvMNxCTaiFWGMDjNn_u-wCPcBGAsYHg/s0/abm69%2B%25283%2529.png";
 }
 butnv[24].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-8LF0iTYDrq4/YMsviaC3SoI/AAAAAAAAAgQ/2zTO3bqmuIc3RY6jeT0-ZyyPOzhYQyVEgCPcBGAsYHg/s0/abm7.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-HCRzRsMZ-2I/YMsvifRN_NI/AAAAAAAAAgQ/9PDFsIKQ3uQ9feQAIbHhFUfRYWIXIR3SQCPcBGAsYHg/s0/abm7%2B%25281%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-h2X87rceQbM/YMsviQOwEiI/AAAAAAAAAgQ/Semz0t8TvR0iB6FkCe3cXbfIApQxfNESACPcBGAsYHg/s0/abm7%2B%25282%2529.png";
 	gbr4b.src = "https://1.bp.blogspot.com/-FbKYPMcdgKU/YMsviYTj9UI/AAAAAAAAAgQ/ssoTQFydhZ8DYfk3u_G7XalljiSUKNajgCPcBGAsYHg/s0/abm7%2B%25283%2529.png";
 }
 butnv[25].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-RJTzpPc-O8g/YMsvqWkfaWI/AAAAAAAAAgU/uv9A41ehd8wePMop2aub4mhBnbSdY7olQCPcBGAsYHg/s0/abm9.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-Khrce7XnkwI/YMsvqYQeh8I/AAAAAAAAAgU/8Rr1j5Ij390io9d95vZ_eiM6ocYyjnRhgCPcBGAsYHg/s0/abm9%2B%25281%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-bvpzHPS4xas/YMsvqTLyutI/AAAAAAAAAgU/MK5wo1jhohUdXmZDQ9VepmjXYi9Ze48zgCPcBGAsYHg/s0/abm9%2B%25282%2529.png";
 	gbr4b.src = "https://1.bp.blogspot.com/-hv1AMY6S-7Q/YMsvqV1NnDI/AAAAAAAAAgU/9Wdy2zUwCBUjGlBTV4QacgFRSUita2hNQCPcBGAsYHg/s0/abm9%2B%25283%2529.png";
 }
 butnv[26].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-FVBiyDFZw0M/YMswvl-PkCI/AAAAAAAAAgg/X1F0gACc4KU8wGzNJLBCycPGdj54xZRAQCPcBGAsYHg/s0/abmadd9.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-Mvi4JvCjcMY/YMswvg5D-SI/AAAAAAAAAgg/dNrCOmFg0igrvE8D_X0ooX4cEoGeZQw7ACPcBGAsYHg/s0/abmadd9%2B%25281%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-5xZ6_onxZQM/YMswvh6qjbI/AAAAAAAAAgg/Thv_OxzeCXYyn4XvpwwbCOUHfPMC-fmqACPcBGAsYHg/s0/abmadd9%2B%25282%2529.png";
 	gbr4b.src = "https://1.bp.blogspot.com/-lfe0AbrSBPE/YMswvr-mr0I/AAAAAAAAAgg/1u-TvBreEooEyKgsAEw_C1vLWBfIsm2kwCPcBGAsYHg/s0/abmadd9%2B%25283%2529.png";
 }
 butnv[27].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-dFjVovK5uFE/YMsw7PNjt9I/AAAAAAAAAgk/-jVY3n8-WVQxxJa_QAxjjD2SlJ2agzIlwCPcBGAsYHg/s0/abmaj11.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-ypQshwbdfQ0/YMsw7B3cIbI/AAAAAAAAAgk/Aj7pJ1c6gwsAsbuKSNtMzPN6dEIp4qpmQCPcBGAsYHg/s0/abmaj11%2B%25281%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-jLu3anZZxdk/YMsw7M4YNZI/AAAAAAAAAgk/uIHqDWaSH-Q-09qZK3Mt0Xw9lT8IRj1gACPcBGAsYHg/s0/abmaj11%2B%25282%2529.png";
 	gbr4b.src = "https://1.bp.blogspot.com/-XCQBL6sZC5U/YMsw7EQaEiI/AAAAAAAAAgk/Bi5HfpSSmaYdUKeoThgKg0LTvPIERYY9ACPcBGAsYHg/s0/abmaj11%2B%25283%2529.png";
 }
 butnv[28].onclick = function() {
-  modal2.style.display = "block";
+  modal.style.display = "block";
   gbr1b.src = "https://1.bp.blogspot.com/-fNb9eG54nuI/YMsyKVtbPRI/AAAAAAAAAgw/WcjymTxe9b4CScNrIkfQtoaP2gNL7QaFwCPcBGAsYHg/s0/abmaj13.png";
 	gbr2b.src = "https://1.bp.blogspot.com/-4dVMdHoQbrM/YMsyKRDrg1I/AAAAAAAAAgw/r5v1d0sSZJYIiLmrSzPjnqqLE7dsUIbHQCPcBGAsYHg/s0/abmaj13%2B%25281%2529.png";
 	gbr3b.src = "https://1.bp.blogspot.com/-4nT3INyfAt0/YMsyKQ8h0II/AAAAAAAAAgw/pRw3TFEEKS0iz0ZSsz5RYuYHPgKuOBZmACPcBGAsYHg/s0/abmaj13%2B%25282%2529.png";
