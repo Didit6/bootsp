@@ -156,9 +156,10 @@ butnv[19].onclick = function() {
 }
 butnv[20].onclick = function() {
   tChord.innerHTML = nmsx1[20];
-  gmcx1.src = "https://1.bp.blogspot.com/-P_32NvYn95k/YMYJy9XrxOI/AAAAAAAAAQ0/othxUjW9wSsH-SPErOVURj57BOgZEQ5AgCPcBGAYYCw/s0/AddText_06-10-09.29.01.png";
-	gmcx2.src = "https://1.bp.blogspot.com/-LWc4zMppkkI/YMYJ0ZYa-4I/AAAAAAAAARk/SQEwYSdxUj48Bvtm162CtjWFXhMOyZ7VgCPcBGAYYCw/s0/AddText_06-10-09.33.33.png";
-	gmcx3.src = "https://1.bp.blogspot.com/-ow_BpThJNGs/YMYJ0WYkStI/AAAAAAAAAQ8/FVQYLm28YNQq3KpT3h32Oqb8dwavR-eLwCPcBGAYYCw/s0/AddText_06-10-09.38.55.png";
+  gbr1.src = "https://1.bp.blogspot.com/-P_32NvYn95k/YMYJy9XrxOI/AAAAAAAAAQ0/othxUjW9wSsH-SPErOVURj57BOgZEQ5AgCPcBGAYYCw/s0/AddText_06-10-09.29.01.png";
+	gbr2.src = "https://1.bp.blogspot.com/-LWc4zMppkkI/YMYJ0ZYa-4I/AAAAAAAAARk/SQEwYSdxUj48Bvtm162CtjWFXhMOyZ7VgCPcBGAYYCw/s0/AddText_06-10-09.33.33.png";
+	gbr3.src = "https://1.bp.blogspot.com/-ow_BpThJNGs/YMYJ0WYkStI/AAAAAAAAAQ8/FVQYLm28YNQq3KpT3h32Oqb8dwavR-eLwCPcBGAYYCw/s0/AddText_06-10-09.38.55.png";
+	gbr4.src = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyGJUJMRRwJBvdDNnt5gXdB8EgQTqbUbQutgVc_1WqfU0i7cJut6CKctKqJnblAgEmqibwCHd41A-4fz694dXH1wy7hSv91W_4tz9ScZmzgxiatSiZIa7IgNEFL6fSdSjVKIg3tzM8b6AjON4aNE9mtEKChlKT3-bFTjCNx3ztrIOOAYzTartBC8yyt_N0/s1600/wt.png";
 }
 butnv[21].onclick = function() {
   tChord.innerHTML = nmsx1[21];
