@@ -1,5 +1,5 @@
 var kosong = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUMkKztDB0lU5CEKvJpQIUO5yfSePpwUimX8Bd7ywnXHLs_ABAlAFJT6nv03oYbUIlTwl4QODjAg7ZKQp8dTLByrv4vaj3s2wotnYGPd1af6m9-OT4xqnYfy3P7j34SKycpK1Gg4IqbX91dKLdgaWtZildtFIsD_sVJ-XCuBX5ohlzUaEmQ-Js0YCoPz18/s1600/trx.png";
-for(let a=0;a<47;a++) {
+for(a=0;a<47;a++) {
  var nmsx1 = ["A","A/C#","A/E","A/F","A11","A13","A6","A69","A7","A7#9","A7b5","A7b9","A7sus4","A9","A9#11","A9b5","Aadd9","Aalt","Aaug","Aaug7","Aaug9","Adim","Adim7","Am","Am/C","Am/E","Am/F","Am/F#","Am/G","Am11","Am6","Am69","Am7","Am7b5","Am9","Amadd9","Amaj11","Amaj13","Amaj7","Amaj7#5","Amaj7b5","Amaj9","AmMaj11","AmMaj7","AmMaj9","Asus2","Asus4"];
  var rowc1 = document.createElement("div");
  rowc1.setAttribute("class", "koloms1");
