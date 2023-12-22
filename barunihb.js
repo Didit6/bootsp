@@ -3,12 +3,12 @@ for(c=0;c<40;c++) {
      var rowc3 = document.createElement("div");
      rowc3.setAttribute("class", "koloms3");
      rowc3.innerHTML = nmsx3[c];
-     document.getElementById("contx").appendChild(rowc3);}
+     document.getElementById("contx3").appendChild(rowc3);}
      // button
      var butnv3 = document.getElementsByClassName("koloms3");
      // modal 
-     var mdlOvrl3 = document.getElementById("overx");
-     var mdlIns3 = document.getElementById("modaContent");
+     var mdlOvrl3 = document.getElementById("overx3");
+     var mdlIns3 = document.getElementById("modaContent3");
      butnv3[0].onclick = function() {
         mdlOvrl3.style.display = "block";
         mdlIns3.innerHTML = '<div class="gCcont"><div class="gItem"><img src="https://1.bp.blogspot.com/-wDOXzDURO54/YM6p_6mSLeI/AAAAAAAAArI/vxH0w3_ZGwYemuDoTeEBtHAZ4RS3tm8lwCPcBGAsYHg/s0/b%2B%25285%2529.png" class="igChd"><img src="https://1.bp.blogspot.com/-giOWZPWT1yg/YM6p_-A1_UI/AAAAAAAAArI/OZOhY0VbY_o9sw_OGIb_Yn1wOQJF9vvKQCPcBGAsYHg/s0/b%2B%25286%2529.png" class="igChd"></div><div class="gItem"><img src="https://1.bp.blogspot.com/-qYYXY-agXUQ/YM6p__Qc6TI/AAAAAAAAArI/nhYEhJjc3bQcLbaPN-MH2jpxt-q5-RtNgCPcBGAsYHg/s0/b%2B%25287%2529.png" class="igChd"><img src="https://1.bp.blogspot.com/-PGjYpBiLcbU/YM6p_6c6RWI/AAAAAAAAArI/Wx_UicAvDms9Wlnug1RSejxbtzH0TX2-wCPcBGAsYHg/s0/b%2B%25284%2529.png" class="igChd"></div></div>';
