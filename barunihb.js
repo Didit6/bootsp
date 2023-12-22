@@ -1,11 +1,11 @@
-for(a=0;a<40;a++) {
+for(c=0;c<40;c++) {
      var nmsx3 = ["B","B11","B13","B6","B69","B7","B7#9","B7b5","B7b9","B7sus4","B9","B9#11","B9b5","Badd9","Balt","Baug","Baug7","Baug9","Bdim","Bdim7","Bm","Bm11","Bm6","Bm69","Bm7","Bm7b5","Bm9","Bmadd9","Bmaj11","Bmaj13","Bmaj7","Bmaj7#5","Bmaj7b5","Bmaj9","Bmmaj11","Bmmaj7","Bmmaj7b5","Bmmaj9","Bsus2","Bsus4"];
      var rowc3 = document.createElement("div");
-     rowc3.setAttribute("class", "koloms1");
-     rowc3.innerHTML = nmsx3[a];
+     rowc3.setAttribute("class", "koloms3");
+     rowc3.innerHTML = nmsx3[c];
      document.getElementById("contx").appendChild(rowc3);}
      // button
-     var butnv3 = document.getElementsByClassName("koloms1");
+     var butnv3 = document.getElementsByClassName("koloms3");
      // modal 
      var mdlOvrl3 = document.getElementById("overx");
      var mdlIns3 = document.getElementById("modaContent");
