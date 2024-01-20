@@ -50,4 +50,18 @@ document.getElementById("b44").onclick = function() {window.location.href = "htt
 document.getElementById("b45").onclick = function() {window.location.href = "https://drive.google.com/file/d/1-iwjqInXZC6h7ALOBCgrtEUZ_fWV93AI/view?usp=drive_link";}
 document.getElementById("b46").onclick = function() {window.location.href = "https://drive.google.com/file/d/1sP-x_-NJEx1lyOfPk8hWUOw4ktL7Q6s7/view?usp=drive_link";}
 document.getElementById("b47").onclick = function() {window.location.href = "https://drive.google.com/file/d/1RBr2u3bCufjPePzKnm66oPzZlpZ_gss_/view?usp=drive_link";}
+document.getElementById("b48").onclick = function() {window.location.href = "https://drive.google.com/file/d/10tuADpT0lNsjpoJ5OW_RFR_xHTP6EgRW/view?usp=drive_link";}
+document.getElementById("b49").onclick = function() {window.location.href = "https://drive.google.com/file/d/15u3s7MLG1yX7qutuqiSmCRi2Xk12OgPO/view?usp=drive_link";}
+document.getElementById("b50").onclick = function() {window.location.href = "https://drive.google.com/file/d/1uJRkHApTPAItqNPnC7kuRsHYRlnbWgws/view?usp=drive_link";}
+document.getElementById("b51").onclick = function() {window.location.href = "https://drive.google.com/file/d/19PcHOYxtzVvhlF7EDgzCKfKunLi2u_aI/view?usp=drive_link";}
+document.getElementById("b52").onclick = function() {window.location.href = "https://drive.google.com/file/d/1TQvV7raHnR4ziy6WslL0ZmInf1rdfYHs/view?usp=drive_link";}
+document.getElementById("b53").onclick = function() {window.location.href = "https://drive.google.com/file/d/1-W31blFCJE7u5rvxeR-5TgKfMvbMBzrw/view?usp=drive_link";}
+document.getElementById("b54").onclick = function() {window.location.href = "https://drive.google.com/file/d/1GHdo3CbHvhcq9L6agh3Y-41mVCv8H8qp/view?usp=drive_link";}
+document.getElementById("b55").onclick = function() {window.location.href = "https://drive.google.com/file/d/1IdsZo_lA4Uqbg0J57k6nQ7D0R_gdNQ4Y/view?usp=drive_link";}
+document.getElementById("b56").onclick = function() {window.location.href = "https://drive.google.com/file/d/12Gd4EahTI9WKHrpaeSgmfCJvKeHq3NlU/view?usp=drive_link";}
+document.getElementById("b57").onclick = function() {window.location.href = "https://drive.google.com/file/d/13swZNVMEtKsMhhLvOKWl801-EE8eT8XA/view?usp=drive_link";}
+document.getElementById("b58").onclick = function() {window.location.href = "https://drive.google.com/file/d/1IgKSYZKUYwXJp8iWK2CbAD8HUZHAyV1C/view?usp=drive_link";}
+document.getElementById("b59").onclick = function() {window.location.href = "https://drive.google.com/file/d/1aYe6NuBJxcS_iS1KFb0zqMy4wKEZUdP7/view?usp=drive_link";}
+document.getElementById("b60").onclick = function() {window.location.href = "https://drive.google.com/file/d/1AuiAIyDxW-tYF2fvxWi6GzPsAyrisOlh/view?usp=drive_link";}
+document.getElementById("b61").onclick = function() {window.location.href = "https://drive.google.com/file/d/1hyNpKh488c0iZlZS9-_4he_54VldFL35/view?usp=drive_link";}
 }}
